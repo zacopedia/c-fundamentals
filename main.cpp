@@ -57,27 +57,29 @@ void showPrice () {
 // area
 // Calculate area of a rectangle.
 
-int calculateArea () {
+void calculateArea () {
     int length = 78;
     int width = 34;
     int area = length * width;
-
-    cout << "the area is: " << area;
+    cout << "the area is: " << area << "\n";
 }
 
 // ///////////////////////////////////////////////
 
 // Create a constant variable PI = 3.14159
 // Use it to calculate area of a circle (radius = 5).
-
+void circleArea () {
+    const double pi = 3.14159;
+    double radius = 5;
+    double area = pi * radius * radius;
+    cout << "the area of a circle is: " << area;
+}
 
 
 // /////////////////// Part 2 — Input Exercises ////////////////////////////
 
 // Ask the user to enter:
-
 // His name
-
 // His age
 
 // ///////////////////////////////////////////////
@@ -88,11 +90,8 @@ int calculateArea () {
 // ///////////////////////////////////////////////
 
 // Ask the user to enter:
-
 // length
-
 // width
-
 // Calculate rectangle area.
 
 // ///////////////////////////////////////////////
@@ -105,67 +104,46 @@ int calculateArea () {
 
 // Ask the user to enter a number.
 // Print:
-
 // The number
-
 // The square
-
 // The cube
 
 // /////////////////// Part 3 — Input + Variables Mixed ////////////////////////////
 
 // Ask the user for:
-
 // 3 numbers
-
 // Calculate:
-
 // Their sum
-
 // Their average
 
 // ///////////////////////////////////////////////
 
 // Create a simple calculator:
-
 // Ask for number 1
-
 // Ask for number 2
-
 // Ask for operator (+ - * /)
-
 // Print result
 
 // ///////////////////////////////////////////////
 
 // Ask the user:
-
 // Price of product
-
 // Discount percentage
-
 // Calculate final price after discount.
 
 // ///////////////////////////////////////////////
 
 // Ask the user:
-
 // Number of hours worked
-
 // Salary per hour
-
 // Calculate total salary.
 
 // ///////////////////////////////////////////////
 
 // Make a small program that:
-
 // Asks user name
-
 // Asks birth year
-
 // Calculates age (assume current year = 2026)
-
 // Prints full message
 
 
@@ -174,5 +152,6 @@ int main () {
     showSum ();
     showPrice ();
     calculateArea ();
+    circleArea ();
     return 0;
 }
