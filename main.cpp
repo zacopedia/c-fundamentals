@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 // /////////////////// Part 1 — Variables Exercises ////////////////////////////
@@ -61,18 +62,21 @@ void calculateArea () {
     int length = 78;
     int width = 34;
     int area = length * width;
-    cout << "the area is: " << area << "\n";
+    cout << "the area of the rectangle is: " << area << "\n";
 }
 
 // ///////////////////////////////////////////////
 
 // Create a constant variable PI = 3.14159
-// Use it to calculate area of a circle (radius = 5).
+// Use it to calculate area of a circle.
+
 void circleArea () {
     const double pi = 3.14159;
-    double radius = 5;
+    double radius;
+    cout << "Enter The Radius";
+    cin >> radius;
     double area = pi * radius * radius;
-    cout << "the area of a circle is: " << area;
+    cout << "the area of a circle is: " << area << "\n";
 }
 
 
@@ -82,10 +86,30 @@ void circleArea () {
 // His name
 // His age
 
+void userInput () {
+    string name;
+    int age;
+    cout << "Enter Your Name: ";
+    cin >> name;
+    cout << "Enter Your Age: ";
+    cin >> age;
+    cout << "Hello " << name << " your age is " << age << "\n";
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter two numbers.
 // Print their sum.
+
+void enterNumbers () {
+    double num1, num2;
+    cout << "Enter num1: ";
+    cin >> num1;
+    cout << "Enter num2: ";
+    cin >> num2;
+    double sum = num1 + num2;
+    cout << "The Sum is: " << sum << "\n";
+}
 
 // ///////////////////////////////////////////////
 
@@ -94,11 +118,29 @@ void circleArea () {
 // width
 // Calculate rectangle area.
 
+void calRectangle () {
+    double length, width;
+    cout << "Enter The length: ";
+    cin >> length;
+    cout << "Enter The Width: ";
+    cin >> width;
+    double area = length * width;
+    cout << "The Rectangle Area is: " << area << "\n";
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter temperature in Celsius.
 // Convert it to Fahrenheit.
 // F = (C × 9/5) + 32
+
+void temperature () {
+    double celsius;
+    cout << "Enter Temperature In Celsius: ";
+    cin >> celsius;
+    double f = (celsius * 9/5) + 32;
+    cout << "The Tempreature In Fahrenheit is: " << f << "\n";
+}
 
 // ///////////////////////////////////////////////
 
@@ -107,6 +149,15 @@ void circleArea () {
 // The number
 // The square
 // The cube
+void numberTransfer () {
+    double num;
+    cout << "Enter Your Number ";
+    cin >> num;
+    double square = num * num;
+    cout << "The square Of This Number is: " << square << "\n";
+    double cube = num * num * num;
+    cout << "The Cube Of This Number is: " << cube << "\n";
+}
 
 // /////////////////// Part 3 — Input + Variables Mixed ////////////////////////////
 
@@ -152,6 +203,11 @@ int main () {
     showSum ();
     showPrice ();
     calculateArea ();
-    circleArea ();
+    // circleArea ();
+    // userInput ();
+    // enterNumbers ();
+    // calRectangle ();
+    // temperature ();
+    numberTransfer ();
     return 0;
 }
