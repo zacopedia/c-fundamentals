@@ -187,35 +187,35 @@ void numberTransfer () {
 // Ask for operator (+ - * /)
 // Print result
 
-void calculatorComplex () {
-    double num1, num2;
-    char op;
+// void calculatorComplex () {
+//     double num1, num2;
+//     char op;
 
-    cout << "Calculator" << "\n";
-    cin >> num1;
-    cin >> op;
-    cin >> num2;
+//     cout << "Calculator" << "\n";
+//     cin >> num1;
+//     cin >> op;
+//     cin >> num2;
 
-    double result;
+//     double result;
 
-    if (op == '+') {
-        result = num1 + num2;
-    }
-    else if (op == '-') {
-        result = num1 - num2;
-    }
-    else if (op == '*') {
-        result = num1 * num2;
-    }
-    else if (op == '/') {
-        result = num1 / num2;
-    }
-    else {
-        cout << "Please Check Your Inputs" << "\n";
-    }
+//     if (op == '+') {
+//         result = num1 + num2;
+//     }
+//     else if (op == '-') {
+//         result = num1 - num2;
+//     }
+//     else if (op == '*') {
+//         result = num1 * num2;
+//     }
+//     else if (op == '/') {
+//         result = num1 / num2;
+//     }
+//     else {
+//         cout << "Please Check Your Inputs" << "\n";
+//     }
 
-    cout << "Thee Result Is: " << result << "\n";
-}
+//     cout << "Thee Result Is: " << result << "\n";
+// }
 
 // ///////////////////////////////////////////////
 
@@ -223,6 +223,21 @@ void calculatorComplex () {
 // Price of product
 // Discount percentage
 // Calculate final price after discount.
+void productDiscount () {
+    double price;
+    double discount;
+
+    cout << "Enter The Product Price" << "\n";
+    cin >> price;
+
+    cout << "Enter The Discount Precentage" << "\n";
+    cin >> discount;
+
+    double result = price - (price * discount / 100);
+    cout << "the Price " << result << "\n";
+    
+
+}
 
 // ///////////////////////////////////////////////
 
@@ -252,6 +267,7 @@ int main () {
     // temperature ();
     // numberTransfer ();
     // calculator ();
-    calculatorComplex ();
+    // calculatorComplex ();
+    productDiscount ();
     return 0;
 }
