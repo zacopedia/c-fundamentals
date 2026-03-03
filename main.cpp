@@ -167,17 +167,17 @@ void numberTransfer () {
 // Their sum
 // Their average
 
-void calculator () {
-    double num1, num2, num3;
-    cout << "Enter Three Numbers " << "\n";
-    cin >> num1 >> num2 >> num3;
+// void calculator () {
+//     double num1, num2, num3;
+//     cout << "Enter Three Numbers " << "\n";
+//     cin >> num1 >> num2 >> num3;
 
-    double sum = num1 + num2 + num3;
-    double average = sum / 3;
+//     double sum = num1 + num2 + num3;
+//     double average = sum / 3;
 
-    cout << "Total: " << sum << "\n";
-    cout << "Average: " << average << "\n";
-}
+//     cout << "Total: " << sum << "\n";
+//     cout << "Average: " << average << "\n";
+// }
 
 // ///////////////////////////////////////////////
 
@@ -186,6 +186,36 @@ void calculator () {
 // Ask for number 2
 // Ask for operator (+ - * /)
 // Print result
+
+void calculatorComplex () {
+    double num1, num2;
+    char op;
+
+    cout << "Calculator" << "\n";
+    cin >> num1;
+    cin >> op;
+    cin >> num2;
+
+    double result;
+
+    if (op == '+') {
+        result = num1 + num2;
+    }
+    else if (op == '-') {
+        result = num1 - num2;
+    }
+    else if (op == '*') {
+        result = num1 * num2;
+    }
+    else if (op == '/') {
+        result = num1 / num2;
+    }
+    else {
+        cout << "Please Check Your Inputs" << "\n";
+    }
+
+    cout << "Thee Result Is: " << result << "\n";
+}
 
 // ///////////////////////////////////////////////
 
@@ -221,6 +251,7 @@ int main () {
     // calRectangle ();
     // temperature ();
     // numberTransfer ();
-    calculator ();
+    // calculator ();
+    calculatorComplex ();
     return 0;
 }
