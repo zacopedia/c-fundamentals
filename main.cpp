@@ -167,6 +167,18 @@ void numberTransfer () {
 // Their sum
 // Their average
 
+void calculator () {
+    double num1, num2, num3;
+    cout << "Enter Three Numbers " << "\n";
+    cin >> num1 >> num2 >> num3;
+
+    double sum = num1 + num2 + num3;
+    double average = sum / 3;
+
+    cout << "Total: " << sum << "\n";
+    cout << "Average: " << average << "\n";
+}
+
 // ///////////////////////////////////////////////
 
 // Create a simple calculator:
@@ -208,6 +220,7 @@ int main () {
     // enterNumbers ();
     // calRectangle ();
     // temperature ();
-    numberTransfer ();
+    // numberTransfer ();
+    calculator ();
     return 0;
 }
