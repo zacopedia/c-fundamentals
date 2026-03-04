@@ -223,21 +223,20 @@ void numberTransfer () {
 // Price of product
 // Discount percentage
 // Calculate final price after discount.
-void productDiscount () {
-    double price;
-    double discount;
 
-    cout << "Enter The Product Price" << "\n";
-    cin >> price;
+// void productDiscount () {
+//     double price;
+//     double discount;
 
-    cout << "Enter The Discount Precentage" << "\n";
-    cin >> discount;
+//     cout << "Enter The Product Price" << "\n";
+//     cin >> price;
 
-    double result = price - (price * discount / 100);
-    cout << "the Price " << result << "\n";
-    
+//     cout << "Enter The Discount Precentage" << "\n";
+//     cin >> discount;
 
-}
+//     double result = price - (price * discount / 100);
+//     cout << "the Price " << result << "\n";
+// }
 
 // ///////////////////////////////////////////////
 
@@ -245,6 +244,20 @@ void productDiscount () {
 // Number of hours worked
 // Salary per hour
 // Calculate total salary.
+
+void workedHours () {
+    double hours;
+    double salary;
+
+    cout << "How Many Hours You Worked" << "\n";
+    cin >> hours;
+
+    cout << "Whats Your Salary Per Hour" << "\n";
+    cin >> salary;
+
+    double total = salary * hours;
+    cout << "Total Salary: " << total << "\n";
+}
 
 // ///////////////////////////////////////////////
 
@@ -268,6 +281,7 @@ int main () {
     // numberTransfer ();
     // calculator ();
     // calculatorComplex ();
-    productDiscount ();
+    // productDiscount ();
+    workedHours ();
     return 0;
 }
