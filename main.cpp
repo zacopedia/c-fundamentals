@@ -245,19 +245,19 @@ void numberTransfer () {
 // Salary per hour
 // Calculate total salary.
 
-void workedHours () {
-    double hours;
-    double salary;
+// void workedHours () {
+//     double hours;
+//     double salary;
 
-    cout << "How Many Hours You Worked" << "\n";
-    cin >> hours;
+//     cout << "How Many Hours You Worked" << "\n";
+//     cin >> hours;
 
-    cout << "Whats Your Salary Per Hour" << "\n";
-    cin >> salary;
+//     cout << "Whats Your Salary Per Hour" << "\n";
+//     cin >> salary;
 
-    double total = salary * hours;
-    cout << "Total Salary: " << total << "\n";
-}
+//     double total = salary * hours;
+//     cout << "Total Salary: " << total << "\n";
+// }
 
 // ///////////////////////////////////////////////
 
@@ -266,6 +266,20 @@ void workedHours () {
 // Asks birth year
 // Calculates age (assume current year = 2026)
 // Prints full message
+
+void ageCalculator () {
+    string name;
+    double yearOfBirth;
+
+    cout << "Enter Your Name" << "\n";
+    cin >> name;
+
+    cout << "Enter Your Year Of Birth" << "\n";
+    cin >> yearOfBirth;
+
+    double result = 2026 - yearOfBirth;
+    cout << name << " Your Age Is: " << result << "\n";
+}
 
 
 int main () {
@@ -282,6 +296,7 @@ int main () {
     // calculator ();
     // calculatorComplex ();
     // productDiscount ();
-    workedHours ();
+    // workedHours ();
+    ageCalculator ();
     return 0;
 }
