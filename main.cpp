@@ -268,17 +268,32 @@ void numberTransfer () {
 // Prints full message
 
 void ageCalculator () {
-    string name;
-    double yearOfBirth;
+    // string name;
+    // double yearOfBirth;
 
-    cout << "Enter Your Name" << "\n";
-    cin >> name;
+    // cout << "Enter Your Name" << "\n";
+    // cin >> name;
 
-    cout << "Enter Your Year Of Birth" << "\n";
-    cin >> yearOfBirth;
+    // cout << "Enter Your Year Of Birth" << "\n";
+    // cin >> yearOfBirth;
 
-    double result = 2026 - yearOfBirth;
-    cout << name << " Your Age Is: " << result << "\n";
+    // double result = 2026 - yearOfBirth;
+    // cout << name << " Your Age Is: " << result << "\n";
+//     float f1 = 35e3;
+// double d1 = 12E4;
+// cout << "the float" << "\n";
+// cout << f1 << "\n";
+// cout << d1 << "\n";
+}
+
+// ASGII Programing For Ciphering text
+
+void asgii () {
+    char c1, c2, c3, c4, c5;
+    cout << "Enter Word With 5 Letters" << "\n";
+    cin >> c1 >> c2 >> c3 >> c4 >> c5;
+    cout << "The ASGII Is: " << int(c1) << " " << int(c2) << " "
+    << int(c3) << " " << int(c4) << " " << int(c5) << "\n";
 }
 
 
@@ -297,6 +312,7 @@ int main () {
     // calculatorComplex ();
     // productDiscount ();
     // workedHours ();
-    ageCalculator ();
+    // ageCalculator ();
+    asgii ();
     return 0;
 }
