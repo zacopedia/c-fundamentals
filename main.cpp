@@ -288,13 +288,33 @@ void ageCalculator () {
 
 // ASGII Programing For Ciphering text
 
-void asgii () {
-    char c1, c2, c3, c4, c5;
-    cout << "Enter Word With 5 Letters" << "\n";
-    cin >> c1 >> c2 >> c3 >> c4 >> c5;
-    cout << "The ASGII Is: " << int(c1) << " " << int(c2) << " "
-    << int(c3) << " " << int(c4) << " " << int(c5) << "\n";
+// void asgii () {
+//     char c1, c2, c3, c4, c5;
+//     cout << "Enter Word With 5 Letters" << "\n";
+//     cin >> c1 >> c2 >> c3 >> c4 >> c5;
+//     cout << "The ASGII Is: " << int(c1) << " " << int(c2) << " "
+//     << int(c3) << " " << int(c4) << " " << int(c5) << "\n";
+// }
+
+// Even Odd Program 
+
+void countEvenOdd () {
+    int number;
+    cout << "Please Enter a Number" << "\n";
+    cin >> number;
+
+    // if (number % 2 == 0) {
+    //     cout << "The Number Is Even" << "\n";
+    // } 
+    // else {
+    //     cout << "The Number Is Odd" << "\n";
+    // }
+    
+    // short version of if else statment
+    int (number % 2 == 0) ?  cout << "The Number Is Even" << "\n":
+    cout << "The Number Is Odd" << "\n";
 }
+
 
 
 int main () {
@@ -313,6 +333,7 @@ int main () {
     // productDiscount ();
     // workedHours ();
     // ageCalculator ();
-    asgii ();
+    // asgii ();
+    countEvenOdd ();
     return 0;
 }
