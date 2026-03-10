@@ -315,6 +315,30 @@ void countEvenOdd () {
     cout << "The Number Is Odd" << "\n";
 }
 
+// user enters side lengths of a triangle (a,b,c)
+// program should write out whther that triangle is equilateral, isosceles or scalene
+
+void triangleLengths () {
+    float a, b, c;
+    float triangleLength;
+
+    cout << "Please Enter The Traingle Lengths" << "\n";
+    cin >> a >> b >> c;
+    if (a == b && b ==c) {
+        cout << "The Triangle Is Equilateral" << "\n";
+    }
+
+    else {
+    if (a!=b && b!=c) {
+        cout << "The Triangle Is Scalene" << "\n";
+        
+    }else {
+            cout << "The Triangle Is Isosceles"<< "\n";
+        }
+    }
+
+}
+
 
 
 int main () {
@@ -334,6 +358,7 @@ int main () {
     // workedHours ();
     // ageCalculator ();
     // asgii ();
-    countEvenOdd ();
+    // countEvenOdd ();
+    triangleLengths ();
     return 0;
 }
