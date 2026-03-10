@@ -339,6 +339,36 @@ void triangleLengths () {
 
 }
 
+// BMI Calculator
+// weight(kg) / height * height(m)
+// uderweight < 18.5
+// normal weight 18.5 - 24.9
+// overweight > 25
+
+void bmiCalculator () {
+    float weight, height;
+
+    cout << "Pleadr Enter Your Weight" << "\n";
+    cin >> weight;
+    cout << "Pleadr Enter Your Height" << "\n";
+    cin >> height;
+
+    // BMI Formula
+    float bmi = weight / (height * height);
+    
+    if (bmi < 18.5) {
+        cout << "Your BMI Is Underweight" << "\n";
+    }
+    else {
+        if (bmi > 25) {
+            cout << "Your BMI Is Overweight" << "\n";
+        } else {
+            cout << "Your BMI Is Normal Weight" << "\n";
+        }
+    }
+
+}
+
 
 
 int main () {
@@ -359,6 +389,7 @@ int main () {
     // ageCalculator ();
     // asgii ();
     // countEvenOdd ();
-    triangleLengths ();
+    // triangleLengths ();
+    bmiCalculator ();
     return 0;
 }
