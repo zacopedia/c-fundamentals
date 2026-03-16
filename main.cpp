@@ -463,7 +463,6 @@ void multiple () {
     }
 }
 
-
 // =====================================================
 // PART 3 — Multi-Condition Decision Pattern
 // =====================================================
@@ -472,11 +471,52 @@ void multiple () {
 // Classify it as:
 // negative, positive, or zero.
 
+void conditionDecision () {
+    int num;
+    cout << "Please Enter a Number" << "\n";
+    cin >> num;
+
+    if (num > 0) {
+    cout << "positive" << "\n";
+    } else if (num < 0) {
+        cout << "Negative" << "\n";
+    } else {
+        cout << "Zero" << "\n";
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter an exam score.
 // Classify the score into:
 // Excellent, Good, Average, or Fail.
+
+void examScore () {
+    // The Score Is Base On 20
+    double score;
+    cout << "Please Enter Exam Score" << "\n";
+    cin >> score;
+
+
+    if (score < 0 || score > 20) {
+        cout << "The Score Must Be Between 0 and 20" << "\n";
+    }
+    // If The Score Is Lesss Then 10 
+    else if (score < 10) {
+        cout << "Fail" << "\n";
+    // If The Score Is Equal To 10 Or Less Or Equal To 12
+    } else if (score <= 12 ) {
+        cout << "Average" << "\n";
+    }
+     // If The Score Is Equal To 13 Or Less Or Equal To 16
+    else if (score <= 16) {
+        cout << "Good" << "\n";
+    }
+    // If The Score Is Equal To 17 Or Less Or Equal To 20
+    else {
+        cout << "Excellent" << "\n";
+    }
+}
 
 // ///////////////////////////////////////////////
 
@@ -484,12 +524,49 @@ void multiple () {
 // Print the corresponding day category:
 // Weekday or Weekend.
 
+void weekday () {
+    int day;
+    cout << "Enter a Day Number" << "\n";
+    cin >> day;
+
+    if (day < 1 || day > 7) {
+        cout << "Please Enter a Valid Day" << "\n";
+    }
+    else if (day <= 5) {
+        cout << "Weekday" << "\n";
+    } else {
+        cout << "Weekend" << "\n";
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a temperature.
 // Print:
 // Cold, Warm, or Hot based on the value.
 
+void temperatureValue () {
+    double temp;
+    cout << "Enter The Temperature" << "\n";
+    cin >> temp;
+
+    if (temp < 0 || temp > 50) {
+        cout << "Please Enter a Valid Temperature" << "\n";
+    }
+    else if (temp < 36) {
+        cout << "Lower Than Average" << "\n";
+    } 
+    else if (temp <= 37) {
+        cout << "Normal" << "\n";
+    } 
+    else if (temp <= 40) {
+        cout << "Higher Than Average" << "\n";
+    }
+    else {
+        cout << "Fever" << "\n";
+    }
+
+}
 
 
 // =====================================================
@@ -1445,7 +1522,11 @@ int main () {
     // divisibleBy5 ();
     // rangeNumbers ();
     // largeNumber ();
-    multiple ();
+    // multiple ();
+    // conditionDecision ();
+    // examScore ();
+    // weekday ();
+    temperatureValue ();
     return 0;
 }
 // arrays
@@ -1455,5 +1536,10 @@ int main () {
 // algorithm problems
 // break/continue
 
+// Programmer Thinking Pattern
 
+// Whenever you classify numbers, always check:
+// > 0
+// < 0
+// == 0
 
