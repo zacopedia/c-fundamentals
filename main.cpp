@@ -417,7 +417,6 @@ void rangeNumbers () {
     int (number >= 1 && number <= 100) ?
     cout << "The Number Is With The Randge" << "\n" :
     cout << "Please Enter a Valid Number" << "\n";
-    
 }
 
 // =====================================================
@@ -426,22 +425,43 @@ void rangeNumbers () {
 
 // Ask the user to enter two numbers.
 // Determine which number is larger.
+void largeNumber () {
+    int num1;
+    int num2;
+    cout << "Please Enter Two Numbers" << "\n";
+    cin >> num1;
+    cin >> num2;
 
-// ///////////////////////////////////////////////
-
-// Ask the user to enter two numbers.
-// Check if the numbers are equal.
-
-// ///////////////////////////////////////////////
-
-// Ask the user to enter two numbers.
-// Determine which number is smaller.
+    if (num1 > num2) {
+        cout << num1 << " Is Larger Than " << num2 << "\n";
+    } else if (num1 < num2) {
+        cout << num2 << " Is Larger Than " << num1 << "\n";
+    } 
+    // Check if the numbers are equal.
+    else {
+        cout << "Both Numbers Are Equials" << "\n";
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter two numbers.
 // Determine if the first number is a multiple of the second.
+void multiple () {
+    int num1, num2;
+    cout << "Please Enter Two Numbers" << "\n";
+    cin >> num1 >> num2;
 
+    if (num2 == 0) {
+    cout << "The Number Cant Be Zero" << "\n";
+    }
+
+    if (num1 % num2 == 0 ) {
+        cout << "The Number is Multiple" << "\n";
+    } else {
+        cout << "The Number Does Not Multiple" << "\n";
+    }
+}
 
 
 // =====================================================
@@ -1423,7 +1443,9 @@ int main () {
     // simpleDecision ();
     // countEvenOdd ();
     // divisibleBy5 ();
-    rangeNumbers ();
+    // rangeNumbers ();
+    // largeNumber ();
+    multiple ();
     return 0;
 }
 // arrays
