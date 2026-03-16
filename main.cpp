@@ -565,9 +565,7 @@ void temperatureValue () {
     else {
         cout << "Fever" << "\n";
     }
-
 }
-
 
 // =====================================================
 // PART 4 — Logical Operator Patterns
@@ -577,21 +575,53 @@ void temperatureValue () {
 // Check if the user qualifies for a loan:
 // age >= 21 AND salary >= 2000.
 
-// ///////////////////////////////////////////////
+void loanQualification () {
+    int age;
+    double salary;
+    cout << "Please Enter Your Age" << "\n";
+    cin >> age;
+    cout << "Please Enter Your Salary" << "\n";
+    cin >> salary;
 
-// Ask the user to enter two numbers.
-// Check if both numbers are positive.
+    if (age >= 21 && salary >= 2000) {
+        cout << "Congratulation You Qualify For a Loan" << "\n";
+    } else {
+        cout << "Sorry Your Not Qualified For Loan" << "\n";
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Check if the number is between 50 and 100.
 
+void checkNumber () {
+    int num;
+    cout << "Please Enter a Number" << "\n";
+    cin >> num;
+
+    if (num >= 50 && num <= 100) {
+        cout << "Correct" << "\n";
+    } else {
+        cout << "Wrong" << "\n";
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Check if the number is divisible by both 3 and 7.
 
+void checkDivisible () {
+    int num;
+    cout << "Please Enter a Number" << "\n";
+    cin >> num;
+    if (num % 3 == 0 && num % 7 == 0) {
+        cout << "Correct" << "\n";
+    } else {
+        cout << "Wrong" << "\n";
+    }
+}
 
 
 // =====================================================
@@ -1526,7 +1556,10 @@ int main () {
     // conditionDecision ();
     // examScore ();
     // weekday ();
-    temperatureValue ();
+    // temperatureValue ();
+    // loanQualification ();
+    // checkNumber ();
+    checkDivisible ();
     return 0;
 }
 // arrays
