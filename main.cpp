@@ -887,8 +887,6 @@ void printSeason () {
     }
 }
 
-
-
 // =====================================================
 // PART 2 — Switch With Characters
 // =====================================================
@@ -897,10 +895,64 @@ void printSeason () {
 // A, B, C, D, F
 // Print a message explaining the grade.
 
+void printGrades () {
+    char grade;
+    cout << "Please Enter Your Grade" << endl;
+    cin >> grade;
+
+    switch (grade) {
+        case 'A':
+        cout << "Excellent" << endl;
+        break;
+        case 'B':
+        cout << "Very Good" << endl;
+        break;
+        case 'C':
+        cout << "Good" << endl;
+        break;
+        case 'D':
+        cout << "Pass" << endl;
+        break;
+        case 'F':
+        cout << "Fail" << endl;
+        break;
+
+        default:
+        cout << "Enter a Valid Grade" << endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a letter.
 // Check if the letter is a vowel using switch.
+
+void checkVowel () {
+    char vowel;
+    cout << "Please Enter a vowel" << endl;
+    cin >> vowel;
+
+    switch (vowel) {
+        case 'a':
+        cout << "Correct" << endl;
+        break;
+        case 'e':
+        cout << "Correct" << endl;
+        break;
+        case 'i':
+        cout << "Correct" << endl;
+        break;
+        case 'o':
+        cout << "Correct" << endl;
+        break;
+        case 'u':
+        cout << "Correct" << endl;
+        break;
+
+        default:
+        cout << "Wrong" << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
@@ -908,7 +960,29 @@ void printSeason () {
 // +  -  *  /
 // Print the name of the operator.
 
+void printOperaor () {
+    char oper;
+    cout << "Please Enter Operator Symbol" << endl;
+    cin >> oper;
 
+    switch (oper) {
+        case '+':
+        cout << "Addition" << endl;
+        break;
+        case '-':
+        cout << "Subtraction" << endl;
+        break;
+        case '/':
+        cout << "Division" << endl;
+        break;
+        case '*':
+        cout << "Multiplication " << endl;
+        break;
+
+        default: 
+        cout << "Please Enter a Valid Operator" << endl;
+    }
+}
 
 // =====================================================
 // PART 3 — Simple Calculator Pattern
@@ -1743,7 +1817,6 @@ void printSeason () {
 // Start arduino
 // =====================================================
 
-
 // =====================================================
 // PART 8 — Sorting & Searching (MISSING CORE)
 // =====================================================
@@ -1962,7 +2035,10 @@ int main () {
     // printDay ();
     // printMonth ();
     // printNumber ();
-    printSeason ();
+    // printSeason ();
+    // printGrades ();
+    // checkVowel ();
+    printOperaor ();
     return 0;
 }
 // arrays
