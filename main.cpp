@@ -994,6 +994,34 @@ void printOperaor () {
 // operator (+ - * /)
 // Use switch to perform the calculation and print the result.
 
+void printResult () {
+    double num1, num2;
+    char oper;
+    cout << "Calculator" << endl;
+    cin >> num1 >> oper >> num2;
+
+    switch (oper) {
+        case '+':
+        cout << num1 + num2 << endl;
+        break;
+        case '-':
+        cout << num1 - num2 << endl;
+        break;
+        case '*':
+        cout << num1 * num2 << endl;
+        break;
+        case '/':
+        if (num2 == 0)
+        cout << "Cant Divide By Zero" << endl;
+        else 
+        cout << num1 / num2 << endl;
+        break;
+        
+        default:
+        cout << "Invalid" << endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number between 1 and 3.
@@ -1002,7 +1030,33 @@ void printOperaor () {
 // 2 → subtract two numbers
 // 3 → multiply two numbers.
 
+void printArithmetic () {
+        int choice;
+        double num1, num2;
+        cout << "Enter a Number Between 1 and 3" << endl;
+        cin >> choice;
 
+        switch (choice) {
+            case 1:
+            cout << "Enter Two Numbers" << endl;
+            cin >> num1 >> num2;
+            cout << num1 + num2 << endl;
+            break;
+            case 2:
+            cout << "Enter Two Numbers" << endl;
+            cin >> num1 >> num2;
+            cout << num1 - num2 << endl;
+            break;
+            case 3:
+            cout << "Enter Two Numbers" << endl;
+            cin >> num1 >> num2;
+            cout <<  num1 * num2 << endl;
+            break;
+
+            default:
+            cout << "Enter a Valid Choice" << endl;
+        }
+}
 
 // =====================================================
 // PART 4 — Grouped Cases Pattern
@@ -1818,7 +1872,8 @@ void printOperaor () {
 // =====================================================
 
 // =====================================================
-// PART 8 — Sorting & Searching (MISSING CORE)
+// PART 8 — Sorting & Searching (MISSING CORE)   
+// 4. START READING Books: check down the plan
 // =====================================================
 
 // DAY 1 — Sorting Basics
@@ -2038,9 +2093,12 @@ int main () {
     // printSeason ();
     // printGrades ();
     // checkVowel ();
-    printOperaor ();
+    // printOperaor ();
+    // printResult ();
+    printArithmetic ();
     return 0;
 }
+
 // arrays
 // strings
 // nested loops
@@ -2059,6 +2117,183 @@ int main () {
 // switch works when:
 // You compare the same variable
 // With constant values
+
+
+
+// =====================================================
+// STUDY PLAN — BOOKS + ARDUINO INTEGRATION
+// =====================================================
+
+
+// =====================================================
+// STEP 1 — BEFORE BOOKS
+// =====================================================
+
+// Finish:
+// PART 1 → PART 7 (C++ Fundamentals)
+
+// Topics you must be comfortable with:
+// Variables
+// Input / Output
+// If / Else
+// Switch
+// Loops (for / while / do-while)
+// Functions
+// Arrays
+// Basic problem solving
+
+
+// =====================================================
+// STEP 2 — START HERE (IMPORTANT)
+// =====================================================
+
+// AFTER finishing PART 7:
+
+// START:
+// - Arduino
+// - Grokking Algorithms (Book)
+// - Stroustrup C++ Book
+
+// DO NOT wait to finish one before the other
+
+// Priority:
+// 1 → C++ Practice
+// 2 → Grokking (algorithms thinking)
+// 3 → Stroustrup (deeper understanding)
+
+
+// =====================================================
+// ARDUINO PLAN
+// =====================================================
+
+// Start simple:
+
+// Day 1 → Blink LED
+// Day 2 → Button + LED
+// Day 3 → Traffic light system
+// Day 4 → Temperature sensor
+// Day 5 → LCD display (optional)
+
+// Practice 2–3 times per week
+
+// Start Arduino only when you are comfortable with:
+// - loops
+// - conditions
+// - functions
+
+
+// =====================================================
+// GROKKING ALGORITHMS PLAN
+// =====================================================
+
+// Read in this order:
+
+// Binary Search
+// Selection Sort
+// Recursion
+// Divide & Conquer
+// Hash Tables
+// Breadth-First Search (BFS)
+// Depth-First Search (DFS)
+// Greedy Algorithms
+// Dynamic Programming (take your time)
+
+
+// =====================================================
+// STROUSTRUP BOOK PLAN (IMPORTANT)
+// =====================================================
+
+// WEEK 1–2:
+// Chapter 1 → Introduction (fast)
+// Chapter 2 → Hello World (fast)
+// Chapter 3 → Objects, Types, Values
+
+// WEEK 3–4:
+// Chapter 4 → Computation (VERY IMPORTANT)
+// Chapter 5 → Errors (VERY IMPORTANT)
+
+// WEEK 5+:
+// Chapter 6 → Writing a Program
+// Chapter 7 → Completing a Program
+
+
+// =====================================================
+// WHAT TO SKIP (FOR NOW)
+// =====================================================
+
+// Skip:
+// Advanced theory
+// GUI sections
+// Very deep math parts
+
+
+// =====================================================
+// DAILY STUDY SYSTEM (VACATION MODE)
+// =====================================================
+
+// Morning:
+// JavaScript → 1.5 – 2 hours
+
+// Afternoon:
+// C++ Practice (your file) → 2–3 hours
+
+// Evening:
+// Grokking → 30 minutes
+// Stroustrup → 20–30 minutes
+
+// 2–3 days per week:
+// Arduino → 1–2 hours
+
+
+// =====================================================
+// DEBUGGING PRACTICE (VERY IMPORTANT)
+// =====================================================
+
+// Every day:
+// Fix your own bugs
+// Read errors carefully
+// Understand why code fails
+
+
+// =====================================================
+// WEEKLY CHECK
+// =====================================================
+
+// Can I solve problems without help?
+// Can I explain my code?
+// Can I debug errors alone?
+
+
+// =====================================================
+// IMPORTANT RULES
+// =====================================================
+
+// Do NOT memorize → understand
+// Do NOT only read → always code
+// If tired → skip books, continue coding
+// Practice > Theory
+
+
+// =====================================================
+// FINAL ROADMAP
+// =====================================================
+
+// PART 1 → PART 7 (Finish first)
+// ↓
+// Start:
+// - Arduino
+// - Grokking
+// - Stroustrup
+// ↓
+// PART 8 → PART 14 (Algorithms)
+// ↓
+// LeetCode + Projects + Freelancing
+
+
+// =====================================================
+// END
+// =====================================================
+
 
 
 
