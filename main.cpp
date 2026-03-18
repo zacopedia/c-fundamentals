@@ -679,13 +679,23 @@ void checkCategory () {
 // Ask the user to enter three numbers.
 // Determine the largest number using nested if statements.
 
-// void determineLargest () {
-//     int num1, num2, num3;
-//     cout << "Please Enter Three Numbers\n";
-//     cin >> num1 >> num2 >> num3;
-    
-  
-// }
+void determineLargest () {
+    int num1, num2, num3;
+    cout << "Please Enter Three Numbers\n";
+    cin >> num1 >> num2 >> num3;
+
+    if (num1 >= num2 && num1 >= num3) {
+        cout << num1 << " Is Grater\n";
+    }
+    else {
+        if (num2 >= num3) {
+            cout << num2 << " Is Grater\n";
+        }
+        else {
+            cout << num3 << " Is Grater\n";
+        }
+    }
+}
 
 // ///////////////////////////////////////////////
 
@@ -707,7 +717,7 @@ void applyLeapYear () {
                 cout << "Leap Year\n";
             } 
             else {
-                cout << "Not Leap Year\n";
+                cout << "Not a Leap Year\n";
             }
         } 
         else {
@@ -715,10 +725,8 @@ void applyLeapYear () {
         }
     }
     else {
-        cout << "Not Leap Year\n";
+        cout << "Not a Leap Year\n";
     }
-
-
 }
 // =====================================================
 // PART 1 — Basic Switch Pattern
@@ -727,16 +735,124 @@ void applyLeapYear () {
 // Ask the user to enter a number between 1 and 7.
 // Use a switch statement to print the name of the day.
 
+void printDay () {
+    int num;
+    cout << "Please Enter Day Number\n";
+    cin >> num;
+
+    switch (num) {
+        case 1: 
+        cout << "Saturday\n";
+        break;
+        case 2:
+        cout << "Sunday\n";
+        break;
+        case 3: 
+        cout << "Monday\n";
+        break;
+        case 4:
+        cout << "Tuesday\n";
+        break;
+        case 5:
+        cout << "Wednesday\n";
+        break;
+        case 6:
+        cout << "Thursday\n";
+        break;
+        case 7:
+        cout << "Friday\n";
+        break;
+        default:
+
+        cout << "Pease Enter a Valid Number\n";
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number between 1 and 12.
 // Use switch to print the corresponding month name.
+
+void printMonth () {
+    int num;
+    cout << "Please Enter Month Number\n";
+    cin >> num;
+
+    switch (num) {
+        case 1:
+        cout << "January\n";
+        break;
+        case 2:
+        cout << "February\n";
+        break;
+        case 3:
+        cout << "March\n";
+        break;
+        case 4:
+        cout << "April\n";
+        break;
+        case 5:
+        cout << "May\n";
+        break;
+        case 6:
+        cout << "June\n";
+        break;
+        case 7:
+        cout << "July\n";
+        break;
+        case 8:
+        cout << "August\n";
+        break;
+        case 9:
+        cout << "September\n";
+        break;
+        case 10:
+        cout << "October\n";
+        break;
+        case 11:
+        cout << "November\n";
+        break;
+        case 12:
+        cout << "December\n";
+        break;
+
+        default:
+        cout << "Please Enter a Valid Number\n";
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number between 1 and 5.
 // Print the word representation of the number.
 // Example: 1 → One, 2 → Two ...
+
+void printNumber () {
+    int num;
+    cout << "Please a Number\n";
+    cin >> num;
+
+    switch (num) {
+        case 1:
+        cout << "One\n";
+        break;
+        case 2:
+        cout << "Two\n";
+        break;
+        case 3:
+        cout << "Three\n";
+        break;
+        case 4:
+        cout << "Four\n";
+        break;
+        case 5:
+        cout << "Five\n";
+        break;
+        
+        default:
+        cout << "Please Enter a Valid Number\n";
+    }
+}
 
 // ///////////////////////////////////////////////
 
@@ -746,6 +862,30 @@ void applyLeapYear () {
 // 2 → Spring
 // 3 → Summer
 // 4 → Autumn
+
+void printSeason () {
+    int num;
+    cout << "Please a Number\n";
+    cin >> num;
+
+    switch (num) {
+        case 1:
+        cout << "Winter\n";
+        break;
+        case 2:
+        cout << "Spring\n";
+        break;
+        case 3:
+        cout << "Summer\n";
+        break;
+        case 4:
+        cout << "Autumn\n";
+        break;
+
+        default:
+        cout << "Please Enter a Valid Number\n";
+    }
+}
 
 
 
@@ -1633,7 +1773,11 @@ int main () {
     // checkPositive ();
     // checkCategory ();
     // determineLargest ();
-    applyLeapYear ();
+    // applyLeapYear ();
+    // printDay ();
+    // printMonth ();
+    // printNumber ();
+    printSeason ();
     return 0;
 }
 // arrays
@@ -1650,4 +1794,8 @@ int main () {
 // < 0
 // == 0
 // applyLeapYear ();
+
+// switch works when:
+// You compare the same variable
+// With constant values
 
