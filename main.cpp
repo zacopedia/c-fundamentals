@@ -1130,9 +1130,45 @@ void printGrade () {
 // 2 → Show age
 // 3 → Show country
 // 4 → Exit
-
 // Ask the user to choose an option.
 // Use switch to execute the selected option.
+
+void createMenu () {
+    int option;
+    string name, country;
+    int age;
+    
+    cout << "Enter Your Name" << endl;
+    cin >> name;
+    cout << "Enter Your Country" << endl;
+    cin >> country;
+    cout << "Enter Your Age" << endl;
+    
+    cout << "Please Choose option" << endl;
+    cout <<"1- Show user name" << endl;
+    cout <<"2- Show age" << endl;
+    cout <<"3- Show country" << endl;
+    cout <<"4- Exit" << endl;
+    cin >> option;
+
+    switch (option) {
+        case 1:
+        cout << "Name: " << name << endl;
+        break;
+        case 2:
+        cout << "Age: " << age << endl;
+        break;
+        case 3:
+        cout << "Coutnry: " << country << endl;
+        break;
+        case 4:
+        cout << "Exit" << endl;
+        break;
+
+        default:
+        cout << "Please Enter a Valid Option" << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
@@ -1142,6 +1178,44 @@ void printGrade () {
 // 3 → Print a message
 // 4 → Exit
 
+void createProgramMenu () {
+        // Menu
+        cout << "1- Calculate square of a number" << endl;
+        cout << "2- Calculate cube of a number" << endl;
+        cout << "3- Print a message" << endl;
+        cout << "4- Exit" << endl;
+
+        int num; 
+        int option;
+        cout << "Choose An Option" << endl;
+        cin >> option;
+    
+        switch (option) {
+            case 1:
+            cout << "Enter a Number" << endl;
+            cin >> num;
+            cout << num * num << endl;
+            break;
+
+            case 2:
+            cout << "Enter a Number" << endl;
+            cin >> num;
+            cout << num * num * num << endl;
+            break;
+
+            case 3:
+            cout << "Thank you" << endl;
+            break;
+
+            case 4:
+            cout << "Program Terminated" << endl;
+            break;
+
+            default:
+            cout << "Enter a Valid Option Above" << endl;
+        }
+
+}
 // =====================================================
 // PART 1 — Basic While Loop Patterns
 // =====================================================
@@ -2005,6 +2079,10 @@ void printGrade () {
 // Maximum number of even numbers in window
 // Minimum number of odd numbers in window
 
+// =====================================================
+// Start LeetCode
+// =====================================================
+
 
 // =====================================================
 // PART 11 — Stack & Queue Basics
@@ -2141,7 +2219,9 @@ int main () {
     // printResult ();
     // printArithmetic ();
     // printWeekdayWeekend ();
-    printGrade ();
+    // printGrade ();
+    // createMenu ();
+    createProgramMenu ();
     return 0;
 }
 
