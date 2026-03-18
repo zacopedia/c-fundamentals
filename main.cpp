@@ -623,7 +623,6 @@ void checkDivisible () {
     }
 }
 
-
 // =====================================================
 // PART 5 — Nested Decision Patterns
 // =====================================================
@@ -632,16 +631,61 @@ void checkDivisible () {
 // First check if it is positive.
 // If positive, check if it is even or odd.
 
+void checkPositive () {
+    int num;
+    cout << "Please Enter a Number" << "\n";
+    cin >> num;
+
+    if (num > 0 ) {
+        cout << "This Number Is Positive" << "\n";
+        if (num % 2 == 0){
+        cout << "This Number Is Even" << "\n";
+        }  else {
+        cout << "This Number Is Odd" << "\n";
+        }
+    }  
+    else if (num < 0) {
+        cout << "This Number Is Negative " << "\n";
+        } 
+        else {
+        cout << "This Number Is Zero " << "\n";
+        }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter age.
 // If age >= 18, check if age >= 60.
 // Print appropriate category.
 
+void checkCategory () {
+    int age;
+    cout << "Please Enter Your Age" << "\n";
+    cin >> age;
+
+    if (age >= 18) {
+        if (age >= 60) {
+            cout << "Old Aged Adults\n";
+        } else {
+            cout << "Young Adult\n";
+        }
+    } else {
+        cout << "Child\n";
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter three numbers.
 // Determine the largest number using nested if statements.
+
+// void determineLargest () {
+//     int num1, num2, num3;
+//     cout << "Please Enter Three Numbers\n";
+//     cin >> num1 >> num2 >> num3;
+    
+  
+// }
 
 // ///////////////////////////////////////////////
 
@@ -650,6 +694,32 @@ void checkDivisible () {
 // check if it is also divisible by 100.
 // Apply leap year logic.
 
+void applyLeapYear () {
+    int year;
+    cout << "Please Enter a Year\n";
+    cin >> year;
+
+    if (year % 4 == 0) {
+
+        if (year % 100 == 0) {
+
+            if (year % 400 == 0) {
+                cout << "Leap Year\n";
+            } 
+            else {
+                cout << "Not Leap Year\n";
+            }
+        } 
+        else {
+            cout << "Leap Year\n";
+        }
+    }
+    else {
+        cout << "Not Leap Year\n";
+    }
+
+
+}
 // =====================================================
 // PART 1 — Basic Switch Pattern
 // =====================================================
@@ -1559,7 +1629,11 @@ int main () {
     // temperatureValue ();
     // loanQualification ();
     // checkNumber ();
-    checkDivisible ();
+    // checkDivisible ();
+    // checkPositive ();
+    // checkCategory ();
+    // determineLargest ();
+    applyLeapYear ();
     return 0;
 }
 // arrays
@@ -1575,4 +1649,5 @@ int main () {
 // > 0
 // < 0
 // == 0
+// applyLeapYear ();
 
