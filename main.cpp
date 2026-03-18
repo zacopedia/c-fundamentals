@@ -1066,6 +1066,29 @@ void printArithmetic () {
 // Use grouped cases to print:
 // Weekday or Weekend.
 
+void printWeekdayWeekend () {
+        int num;
+        cout << "Please Enter a Number" << endl;
+        cin >> num;
+        
+        switch (num) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        cout << "Weekday" << endl;
+        break;
+        case 6:
+        case 7:
+        cout << "Weekend" << endl;
+        break;
+
+        default:
+        cout << "Please Enter a Valid Number" << endl;
+        }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a letter grade.
@@ -1073,7 +1096,28 @@ void printArithmetic () {
 // Group C as "Average"
 // Group D and F as "Needs Improvement".
 
+void printGrade () {
+        char grade;
+        cout << "Please Enter Your Grade" << endl;
+        cin >> grade;
 
+        switch (grade) {
+            case 'a':
+            case 'b':
+            cout << "Excellent" << endl;
+            break;
+            case 'c':
+            cout << "Average" << endl;
+            break;
+            case 'd':
+            case 'f':
+            cout << "Needs Improvement" << endl;
+            break;
+
+            default:
+            cout << "Please Enter a Valid Grade" << endl;
+        }
+}
 
 // =====================================================
 // PART 5 — Menu Pattern (Very Common)
@@ -2095,7 +2139,9 @@ int main () {
     // checkVowel ();
     // printOperaor ();
     // printResult ();
-    printArithmetic ();
+    // printArithmetic ();
+    // printWeekdayWeekend ();
+    printGrade ();
     return 0;
 }
 
