@@ -737,7 +737,7 @@ void applyLeapYear () {
 
 void printDay () {
     int num;
-    cout << "Please Enter Day Number\n";
+    cout << "Please Enter a Day Number\n";
     cin >> num;
 
     switch (num) {
@@ -764,7 +764,7 @@ void printDay () {
         break;
         default:
 
-        cout << "Pease Enter a Valid Number\n";
+        cout << "Please Enter a Valid Number\n";
     }
 }
 
@@ -775,7 +775,7 @@ void printDay () {
 
 void printMonth () {
     int num;
-    cout << "Please Enter Month Number\n";
+    cout << "Please Enter a Month Number\n";
     cin >> num;
 
     switch (num) {
@@ -829,7 +829,7 @@ void printMonth () {
 
 void printNumber () {
     int num;
-    cout << "Please a Number\n";
+    cout << "Please Enter a Number\n";
     cin >> num;
 
     switch (num) {
@@ -865,7 +865,7 @@ void printNumber () {
 
 void printSeason () {
     int num;
-    cout << "Please a Number\n";
+    cout << "Please Enter a Number\n";
     cin >> num;
 
     switch (num) {
@@ -1738,6 +1738,191 @@ void printSeason () {
 // Ask the user to enter a number.
 // Check if the number is a Harshad number
 // (divisible by the sum of its digits).
+
+// =====================================================
+// Start arduino
+// =====================================================
+
+
+// =====================================================
+// PART 8 — Sorting & Searching (MISSING CORE)
+// =====================================================
+
+// DAY 1 — Sorting Basics
+// Bubble sort an array
+// Selection sort an array
+// Insertion sort an array
+// Sort array in ascending order
+// Sort array in descending order
+// Find largest element after sorting
+// Find smallest element after sorting
+// Count number of swaps in bubble sort
+// Check if array is already sorted
+// Sort array without using built-in functions
+
+
+// DAY 2 — Searching Basics
+// Linear search for an element
+// Binary search in sorted array
+// Find first occurrence of a number
+// Find last occurrence of a number
+// Count occurrences of a number
+// Find closest number to a target
+// Search element in reversed array
+// Search element in rotated sorted array (basic)
+// Check if element exists
+// Find index of largest element
+
+
+// =====================================================
+// PART 9 — Recursion (MISSING CORE)
+// =====================================================
+
+// DAY 1 — Recursion Basics
+// Print numbers from 1 to N recursively
+// Print numbers from N to 1 recursively
+// Calculate factorial using recursion
+// Calculate sum of first N numbers
+// Calculate Fibonacci at position N
+// Count digits in a number recursively
+// Sum digits of a number recursively
+// Reverse a number recursively
+// Check if number is palindrome recursively
+// Find maximum in array recursively
+
+
+// DAY 2 — Recursion Intermediate
+// Reverse a string recursively
+// Check if string is palindrome recursively
+// Count vowels recursively
+// Count consonants recursively
+// Find minimum element recursively
+// Sum array elements recursively
+// Print array elements recursively
+// Check if array is sorted recursively
+// Replace elements recursively
+// Find index of element recursively
+
+
+// =====================================================
+// PART 10 — Two Pointers & Sliding Window
+// =====================================================
+
+// DAY 1 — Two Pointers
+// Find pair with sum = X in sorted array
+// Reverse array using two pointers
+// Reverse string using two pointers
+// Check palindrome using two pointers
+// Move all zeros to the end
+// Remove duplicates from sorted array
+// Find pair with difference = X
+// Merge two sorted arrays
+// Find common elements in two arrays
+// Check if array is sorted
+
+
+// DAY 2 — Sliding Window
+// Maximum sum subarray of size K
+// Minimum sum subarray of size K
+// Count subarrays with sum = X
+// Find average of subarrays of size K
+// Count subarrays with all positive numbers
+// Find longest subarray with sum <= X
+// Find shortest subarray with sum >= X
+// Count vowels in substring of size K
+// Maximum number of even numbers in window
+// Minimum number of odd numbers in window
+
+
+// =====================================================
+// PART 11 — Stack & Queue Basics
+// =====================================================
+
+// DAY 1 — Stack
+// Implement stack using array
+// Push elements to stack
+// Pop elements from stack
+// Peek top element
+// Check if stack is empty
+// Reverse a string using stack
+// Check balanced parentheses
+// Convert infix to postfix (basic)
+// Evaluate postfix expression
+// Implement stack using linked list (optional)
+
+
+// DAY 2 — Queue
+// Implement queue using array
+// Enqueue elements
+// Dequeue elements
+// Peek front element
+// Check if queue is empty
+// Implement circular queue
+// Implement deque operations
+// Simulate task scheduling using queue
+// Find first non-repeating character using queue
+// Simple BFS traversal simulation
+
+
+// =====================================================
+// PART 12 — Linked List Basics
+// =====================================================
+
+// DAY 1 — Linked List
+// Create a singly linked list
+// Insert at head
+// Insert at tail
+// Delete from head
+// Delete from tail
+// Search for an element
+// Print all elements
+// Count length of list
+// Reverse list iteratively
+// Reverse list recursively
+
+
+// =====================================================
+// PART 13 — Trees Basics (INTRO ONLY)
+// =====================================================
+
+// DAY 1 — Binary Tree
+// Create a tree node
+// Insert nodes manually
+// Preorder traversal
+// Inorder traversal
+// Postorder traversal
+// Count total nodes
+// Find height of tree
+// Count leaf nodes
+// Find maximum value
+// Sum of all nodes
+
+
+// =====================================================
+// PART 14 — Advanced (LATER — DO NOT RUSH)
+// =====================================================
+
+// Dynamic Programming (basic)
+// Fibonacci using DP
+// Climbing stairs problem
+// Maximum subarray sum (Kadane)
+// Coin change (basic)
+// Longest common subsequence (basic)
+
+// Graph Basics
+// Represent graph using adjacency list
+// BFS traversal
+// DFS traversal
+// Count connected components
+// Detect cycle (basic)
+
+// Backtracking
+// Generate subsets
+// Generate permutations
+// Solve simple maze
+// Solve N-Queens (basic)
+
+
 int main () {
     showAge ();
     showSum ();
@@ -1798,4 +1983,7 @@ int main () {
 // switch works when:
 // You compare the same variable
 // With constant values
+
+
+
 
