@@ -1216,6 +1216,7 @@ void createProgramMenu () {
         }
 
 }
+
 // =====================================================
 // PART 1 — Basic While Loop Patterns
 // =====================================================
@@ -1223,24 +1224,60 @@ void createProgramMenu () {
 // Ask the user to enter a number.
 // Use a while loop to print numbers from 1 to that number.
 
+void printe1Numbers () {
+        int num;
+        cout << "Please Enter a Number\n";
+        cin >> num;
+
+        int i = 1;
+        while (i <= num) {
+            cout << i << endl;
+            i++;
+        }
+} 
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Use a while loop to print numbers from that number down to 1.
 
-// ///////////////////////////////////////////////
+void printReverse () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
 
-// Use a while loop to print numbers from 1 to 20.
+    int i = num;
+    while (i >= 1) {
+        cout << i << endl;
+        i--;
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Use a while loop to print all even numbers from 1 to 50.
 
+void printEvenNumbers () {
+    cout << "Print Even Numbers\n";
+    int i = 2;
+    while (i <= 50) {
+        cout << i << endl;
+        i += 2;
+    }
+} 
+
 // ///////////////////////////////////////////////
 
 // Use a while loop to print all odd numbers from 1 to 50.
 
-
+void printOddNumbers () {
+    cout << "Print Odd Numbers\n";
+    int i = 1;
+    while (i <= 50) {
+        cout << i << endl;
+        i += 2;
+    }
+}
 
 // =====================================================
 // PART 2 — Counting Patterns
@@ -1284,7 +1321,9 @@ void createProgramMenu () {
 // Ask the user to guess a secret number.
 // Continue asking until the correct number is entered.
 
-
+// =====================================================
+// Project-1 — Smart Calculator
+// =====================================================
 
 // =====================================================
 // PART 4 — Condition Controlled Loops
@@ -1326,6 +1365,10 @@ void createProgramMenu () {
 
 // Ask the user to enter a number.
 // Reverse the digits of the number using a while loop.
+
+// =====================================================
+// Project-2 — Number Gessing Game
+// =====================================================
 
 // =====================================================
 // PART 1 — Basic do...while Patterns
@@ -1590,6 +1633,10 @@ void createProgramMenu () {
 
 // Ask the user to enter 5 numbers.
 // Reverse the array into another array.
+
+// =====================================================
+// Project-3 — Student Management
+// =====================================================
 
 // =====================================================
 // PART 1 — Basic String Input / Output Pattern
@@ -2221,7 +2268,11 @@ int main () {
     // printWeekdayWeekend ();
     // printGrade ();
     // createMenu ();
-    createProgramMenu ();
+    // createProgramMenu ();
+    // printe1Numbers ();
+    // printReverse ();
+    // printEvenNumbers ();
+    printOddNumbers ();
     return 0;
 }
 
