@@ -1286,20 +1286,245 @@ void printOddNumbers () {
 // Ask the user to enter a number.
 // Count how many numbers from 1 to that number are divisible by 3.
 
+void countDivisible () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    int i = 1;
+    int count = 0;
+
+    while (i <= num ) {
+        if (i % 3 == 0) {
+            count++;
+        }
+        i++;
+    }
+    cout << count << " Number Are Divisible By 3" << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Calculate the sum of numbers from 1 to that number using a while loop.
+
+void calculateSumNuumbers () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+    
+    int i = 1;
+    int sum = 0;
+
+    while (i <= num) {
+        sum += i;
+        i++;
+    }
+    cout << sum << endl;
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Calculate the factorial of that number using a while loop.
 
+void calculateFactorial () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    int i = 1;
+    int fact = 1;
+
+    while (i <= num) {
+        fact *= i;
+        i++;
+    }
+    cout << fact << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Count how many digits the number has using a while loop.
+
+void countDigit () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+    
+    int count = 0;
+
+    if (num == 0) {
+        count = 1;
+    } else {
+        while (num !=0) {
+            num /= 10;
+            count++;
+        }
+    }
+    cout << count << endl;
+}
+
+// //////////////////////////////////////////////////////
+
+// Ask the user to enter a number.
+// Calculate the sum of numbers divisible by 5 from 1 to that number.
+
+void calculateSumDivisible () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    int i = 1;
+    int sum = 0;
+
+    while (i <= num) {
+        if (i % 5 == 0) {
+            sum += i;
+        }
+        i++;
+    }
+    cout << sum << endl;
+}
+
+// //////////////////////////////////////////////////////
+
+// Ask the user to enter a number.
+// Calculate the sum of even numbers from 1 to that number.
+
+void calculateSumEven () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    int i = 1;
+    int sum = 0;
+
+    while (i <= num) {
+        if (i % 2 == 0) {
+            sum += i;
+        }
+        i++;
+    }
+    cout << sum << endl;
+}
+
+// //////////////////////////////////////////////////////
+
+// Ask the user to enter a number.
+// Calculate the sum of odd numbers from 1 to that number.
+
+void calculateSumOdd () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    int i = 1;
+    int sum = 0;
+
+    while (i <= num) {
+        if (i % 2 != 0) {
+            sum += i;
+        }
+        i++;
+    }
+    cout << sum << endl;
+}
+
+// //////////////////////////////////////////////////////
+
+// Ask the user to enter a number.
+// Count how many numbers are divisible by BOTH 2 and 3.
+
+void countDivisibleBy2And3 () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    int i = 1;
+    int count = 0;
+
+    while (i <= num) {
+        if (i % 2 == 0 && i % 3 == 0) {
+            count++;
+        }
+        i++;
+    }
+    cout << count << endl;
+}
+
+// //////////////////////////////////////////////////////
+
+// Ask the user to enter a number.
+// Print numbers from 1 to that number:
+// - If divisible by 2 → print "Even"
+// - If divisible by 3 → print "Three"
+// - If divisible by both → print "EvenThree"
+
+void printNumbersFrom1 () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    int i = 1;
+    
+    while (i <= num) {
+        if (i % 2 == 0 && i % 3 == 0) {
+            cout << "EvenThree\n";
+        } else if (i % 2 == 0) {
+            cout << "Even\n";
+        } else if (i % 3 == 0) {
+            cout << "Three\n";
+        } else {
+            cout << i << endl;
+        }
+        i++;
+    }  
+}
+
+// //////////////////////////////////////////////////////
+
+// Ask the user to enter two numbers (start and end).
+// Print all numbers between them.
+
+void printNumbersBetween () {
+    int num1, num2;
+    cout << "Please Enter Two Numbers\n";
+    cin >> num1 >> num2;
+
+    int i = num1;
+    
+    while (i <= num2) {
+    cout << i << endl;
+        i++;
+    }
+}
+// //////////////////////////////////////////////////////
+
+// Ask the user to enter two numbers.
+// Count how many numbers between them are divisible by 4.
+
+void countNmbersDiv4 () {
+    int num1, num2;
+    cout << "Please Enter Two Numbers\n";
+    cin >> num1 >> num2;
+
+    int start = min(num1, num2);
+    int end = max(num1, num2);
+
+    int i = start;
+    int count = 0;
+    
+    while (i <= end) {
+        if (i % 4 == 0) {
+            count++;
+        }
+        
+        i++;
+    }
+    cout << count << endl;
+}
 
 
 
@@ -1635,6 +1860,13 @@ void printOddNumbers () {
 // Reverse the array into another array.
 
 // =====================================================
+// LeetCode
+   // Pattern 1 → Array Traversal (FULL)
+   // Pattern 2 → Counting / Frequency
+   // Pattern 3 → Min / Max Tracking
+// =====================================================
+
+// =====================================================
 // Project-3 — Student Management
 // =====================================================
 
@@ -1781,6 +2013,15 @@ void printOddNumbers () {
 
 // Ask the user to enter a word.
 // Repeat the word 5 times in a new string.
+
+// =====================================================
+// LeetCode
+   // Pattern 4 → String Traversal
+   // 👉 Work with:
+   // - characters
+  // - counting vowels
+  // - reversing strings
+// =====================================================
 
 // =====================================================
 // PART 1 — Basic Return Value Patterns
@@ -2066,6 +2307,11 @@ void printOddNumbers () {
 // Check if element exists
 // Find index of largest element
 
+// =====================================================
+// LeetCode
+   // Pattern 10 → Binary Search
+// =====================================================
+
 
 // =====================================================
 // PART 9 — Recursion (MISSING CORE)
@@ -2096,6 +2342,10 @@ void printOddNumbers () {
 // Replace elements recursively
 // Find index of element recursively
 
+// =====================================================
+// LeetCode
+   // Pattern 11 → Recursion
+// =====================================================
 
 // =====================================================
 // PART 10 — Two Pointers & Sliding Window
@@ -2127,9 +2377,15 @@ void printOddNumbers () {
 // Minimum number of odd numbers in window
 
 // =====================================================
-// Start LeetCode
+// LeetCode
+   // Pattern 5 → Two Pointers
+   // Pattern 6 → Sliding Window
 // =====================================================
 
+// =====================================================
+// Start LeetCode
+  // Pattern 7 → Hash Map (Frequency Map)
+// =====================================================
 
 // =====================================================
 // PART 11 — Stack & Queue Basics
@@ -2160,6 +2416,10 @@ void printOddNumbers () {
 // Find first non-repeating character using queue
 // Simple BFS traversal simulation
 
+// =====================================================
+// Start LeetCode
+  // Pattern 9 → Stack
+// =====================================================
 
 // =====================================================
 // PART 12 — Linked List Basics
@@ -2194,6 +2454,10 @@ void printOddNumbers () {
 // Find maximum value
 // Sum of all nodes
 
+// =====================================================
+// Start LeetCode
+  // Pattern 13 → Tree Traversal (DFS / BFS)
+// =====================================================
 
 // =====================================================
 // PART 14 — Advanced (LATER — DO NOT RUSH)
@@ -2218,6 +2482,13 @@ void printOddNumbers () {
 // Generate permutations
 // Solve simple maze
 // Solve N-Queens (basic)
+
+// =====================================================
+// Start LeetCode
+  // Pattern 12 → Backtracking
+  // Pattern 14 → Graph Traversal
+  // Pattern 15 → Dynamic Programming
+// =====================================================
 
 
 int main () {
@@ -2272,7 +2543,18 @@ int main () {
     // printe1Numbers ();
     // printReverse ();
     // printEvenNumbers ();
-    printOddNumbers ();
+    // printOddNumbers ();
+    // countDivisible ();
+    // calculateSumNuumbers ();
+    // calculateFactorial ();
+    // countDigit ();
+    // calculateSumDivisible ();
+    // calculateSumEven ();
+    // calculateSumOdd ();
+    // countDivisibleBy2And3 ();
+    // printNumbersFrom1 ();
+    // printNumbersBetween ();
+    countNmbersDiv4 ();
     return 0;
 }
 
@@ -2295,6 +2577,16 @@ int main () {
 // You compare the same variable
 // With constant values
 
+// loop Thinking Like Programmer
+// input → loop → condition → action → output
+
+// // What do I receive?
+// What changes?
+// What do I check?
+// What do I do?
+// What do I print?
+
+// Always check conditions using the loop variable (i), not the input.
 
 
 // =====================================================
