@@ -1520,13 +1520,10 @@ void countNmbersDiv4 () {
         if (i % 4 == 0) {
             count++;
         }
-        
         i++;
     }
     cout << count << endl;
 }
-
-
 
 // =====================================================
 // PART 3 — User Input Loops
@@ -1535,16 +1532,59 @@ void countNmbersDiv4 () {
 // Ask the user to enter numbers continuously.
 // Stop when the user enters 0.
 
+void stopUser () {
+    int num;
+    cout << "Please Enter a Number\n";
+    cin >> num;
+
+    while (num != 0) {
+        cout << "Please Enter a Number\n";
+        cin >> num;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter numbers.
 // Keep adding them to a sum.
 // Stop when the user enters -1.
 
+void addUserSum () {
+    int num;
+    int sum = 0;
+
+    while (true) {
+        cout << "Please Enter a Number\n";
+        cin >> num;
+
+        if (num == -1) {
+            break;
+        }
+        sum += num;
+        cout << "Current: sum = " << sum << endl;
+    }  
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to guess a secret number.
 // Continue asking until the correct number is entered.
+
+void secretNumber () {
+    int num;
+    int secretNum = 34;
+    cout << "Guess a Secret Number\n";
+    cin >> num;
+
+    while (true) {
+        if (num == secretNum) {
+            cout << "Correct\n";
+            break;
+        }
+        cout << "Try Again\n";
+        cin >> num;
+    }
+}
 
 // =====================================================
 // Project-1 — Smart Calculator
@@ -2554,7 +2594,10 @@ int main () {
     // countDivisibleBy2And3 ();
     // printNumbersFrom1 ();
     // printNumbersBetween ();
-    countNmbersDiv4 ();
+    // countNmbersDiv4 ();
+    // stopUser ();
+    // addUserSum ();
+    secretNumber ();
     return 0;
 }
 
@@ -2587,6 +2630,29 @@ int main () {
 // What do I print?
 
 // Always check conditions using the loop variable (i), not the input.
+
+// min() and max() are functions used to find:
+// min → smallest value
+// max → largest value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // =====================================================
