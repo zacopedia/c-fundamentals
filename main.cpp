@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <limits>
 using namespace std;
 
 // =====================================================
@@ -1597,17 +1598,69 @@ void secretNumber () {
 // Ask the user to enter a password.
 // Continue asking until the correct password is entered.
 
+void enterPassword () {
+    int pssword;
+    int correctPassword = 43124;
+
+    while (true) {
+        cout << "Please Enter a password\n";
+        cin >> pssword;
+        if (pssword == correctPassword) {
+            cout << "Correct\n";
+            break;
+        } else {
+            cout << "Wrong\n";
+        }
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a positive number.
 // Keep asking while the number is negative.
+
+void enterPositiveNumber () {
+    int num;
+    
+    while (true) {
+        cout << "Enter a Positive Number\n";
+        cin >> num;
+        if (num < 0) {
+            cout << "Try Again\n";
+            continue;
+        } else {
+            cout << "Correct\n";
+            break;
+        }
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter numbers.
 // Continue while the numbers are less than 100.
 
+void enterNumbersLess100 () {
+    int num;
+    
+    while (true) {
+    cout << "Enter Numbers\n";
+    cin >> num;
 
+    if (cin.fail()) {
+        cout << "Enter a Valid Number\n";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        continue;
+    }
+        if (num < 100) {
+            cout << "Correct\n";
+        } else {
+            cout << "Try Again\n";
+            break;
+        }
+    }
+}
 
 // =====================================================
 // PART 5 — Pattern Practice
@@ -2597,7 +2650,10 @@ int main () {
     // countNmbersDiv4 ();
     // stopUser ();
     // addUserSum ();
-    secretNumber ();
+    // secretNumber ();
+    // enterPassword ();
+    // enterPositiveNumber ();
+    enterNumbersLess100 ();
     return 0;
 }
 
@@ -2635,6 +2691,12 @@ int main () {
 // min → smallest value
 // max → largest value
 
+//  if (cin.fail()) {
+//         cout << "Enter a Valid Number\n";
+//         cin.clear();
+//         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//         continue;
+//     }
 
 
 
