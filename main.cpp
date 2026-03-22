@@ -1805,8 +1805,7 @@ void printDownDoWhile () {
         i--;
     } while (i >= 1);
 }
-// 5 to 1
-// 1 2 
+
 // =====================================================
 // PART 2 — Input Validation Pattern
 // =====================================================
@@ -1814,19 +1813,46 @@ void printDownDoWhile () {
 // Ask the user to enter a password.
 // Continue asking until the correct password is entered.
 
+void enterDoWhilePassword () {
+    int password = 453;
+    int num;
+    
+    do {
+        cout << "Enter a Password\n";
+        cin >> num;
+    } while (num != password);
+
+    cout << "Correct\n";
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter an age.
 // Keep asking until the age is between 1 and 120.
 
+void askAgeDoWhile () {
+    int age;
+    
+    do {
+        cout << "Enter Your Age\n";
+        cin >> age;
+    } while (age < 1 || age > 120);
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number between 10 and 50.
 // Repeat the question until the number is inside the range.
 
+void enterBetweenDoWhile () {
+    int num;
+    
 
+    do {
+        cout << "Enter a Number Between 10 And 50\n";
+        cin >> num;
+    } while (num < 10 || num > 50);
+}
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a positive number.
@@ -2778,7 +2804,10 @@ int main () {
     // printDoWhile ();
     // enterPositiveDoWhile ();
     // printNumberDoWhile ();
-    printDownDoWhile ();
+    // printDownDoWhile ();
+    // enterDoWhilePassword ();
+    // askAgeDoWhile ();
+    enterBetweenDoWhile ();
     return 0;
 }
 
