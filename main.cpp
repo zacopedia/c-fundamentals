@@ -1720,12 +1720,15 @@ void printReverseDigit () {
     int num;
     cout << "Enter a Number\n";
     cin >> num;
-     
+    
     int reversed = 0;
 
     while (num != 0) {
+        // Get Last Digit
         int digit = num % 10;
+        // Build Reversed Number
         reversed = reversed * 10 + digit;
+        // Remove Last Digit
         num /= 10;
     }
 
@@ -1744,22 +1747,66 @@ void printReverseDigit () {
 // Print the number.
 // Repeat until the user enters 0.
 
+void printDoWhile () {
+    int num;
+
+    do {
+    cout << "Enter a Number\n";
+    cin >> num;
+    cout << "Your Number Is: " << num << endl;
+
+    } while (num != 0);
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a positive number.
 // Keep asking until the user enters a number greater than 0.
+
+void enterPositiveDoWhile () {
+    int num;
+
+    do {
+    cout << "Enter a Poistive Number\n";
+    cin >> num;
+    } while (num > 0);
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Print numbers from 1 to that number using a do...while loop.
 
+void printNumberDoWhile () {
+    int num;
+    cout << "Enter a Number\n";
+    cin >> num;
+    
+    int i = 1;
+    do {
+        cout << i << endl;
+        i++;
+    } while (i <= num);
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Print numbers from that number down to 1 using a do...while loop.
 
-
+void printDownDoWhile () {
+    int num;
+    cout << "Enter a Numner\n";
+    cin >> num;
+    
+    int i = num;
+    do {
+        cout << i << endl;
+        i--;
+    } while (i >= 1);
+}
+// 5 to 1
+// 1 2 
 // =====================================================
 // PART 2 — Input Validation Pattern
 // =====================================================
@@ -1767,15 +1814,23 @@ void printReverseDigit () {
 // Ask the user to enter a password.
 // Continue asking until the correct password is entered.
 
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter an age.
 // Keep asking until the age is between 1 and 120.
 
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number between 10 and 50.
 // Repeat the question until the number is inside the range.
+
+
+// ///////////////////////////////////////////////
+
+// Ask the user to enter a positive number.
+// Keep asking until the number is greater than 0.
 
 
 // =====================================================
@@ -1787,11 +1842,13 @@ void printReverseDigit () {
 // Stop when the user enters 0.
 // Print the final sum.
 
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter numbers.
 // Count how many numbers were entered.
 // Stop when the user enters -1.
+
 
 // ///////////////////////////////////////////////
 
@@ -1799,6 +1856,19 @@ void printReverseDigit () {
 // Track the largest number entered.
 // Stop when the user enters 0.
 
+
+// ///////////////////////////////////////////////
+
+// Ask the user to enter numbers.
+// Count how many numbers are even.
+// Stop when the user enters -1.
+
+
+// ///////////////////////////////////////////////
+
+// Ask the user to enter numbers.
+// Calculate the average.
+// Stop when the user enters -1.
 
 // =====================================================
 // PART 4 — Menu Pattern
@@ -2704,7 +2774,11 @@ int main () {
     // enterNumbersLess100 ();
     // printPattern ();
     // printMultiplication ();
-    printReverseDigit ();
+    // printReverseDigit ();
+    // printDoWhile ();
+    // enterPositiveDoWhile ();
+    // printNumberDoWhile ();
+    printDownDoWhile ();
     return 0;
 }
 
