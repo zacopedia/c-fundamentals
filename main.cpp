@@ -1981,9 +1981,8 @@ void calculateAvDoWhile () {
 
 void menuDoWhile () {
     int num1, num2;
+    int option;
 
-  
-int option;
     do {
     cout << "\n========== Menu ==========\n";
     cout << "1- Add Two Numbers\n";
@@ -2020,23 +2019,51 @@ int option;
 
 // Use a for loop to print numbers from 1 to 10.
 
+void printDoLoop () {
+        for (int i = 1; i <= 10; i++) {
+            cout << i << endl;
+        }
+}
+
 // ///////////////////////////////////////////////
 
 // Use a for loop to print numbers from 10 down to 1.
 
+void printDownForLoop () {
+    for (int i = 10; i >= 1; i--) {
+        cout << i << endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Use a for loop to print all even numbers from 1 to 50.
-
-// ///////////////////////////////////////////////
-
 // Use a for loop to print all odd numbers from 1 to 50.
+void printEvenOddForLoop () {
+    for (int i = 1; i <= 50; i++) {
+        // Even Numbers
+        if (i % 2 == 0) {
+            cout << "Even: " << i << endl;
+        } 
+        // Odd Numbers
+        else {
+            cout << "Odd: " << i << endl;
+        }
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Use a for loop to print numbers from 1 to 100.
 // Print only numbers divisible by 5.
 
+void printDiviForLoop () {
+    for (int i = 1; i <= 100; i++) {
+        if (i % 5 == 0) {
+            cout << "Divisible By 5: " << i << endl;
+        }
+    }
+}
 
 // =====================================================
 // PART 2 — Counting & Summation Patterns
@@ -2904,7 +2931,11 @@ int main () {
     // trackNumberDoWhile ();
     // countEvenDoWhile ();
     // calculateAvDoWhile ();
-    menuDoWhile ();
+    // menuDoWhile ();
+    // printDoLoop ();
+    // printDownForLoop ();
+    // printEvenOddForLoop ();
+    printDiviForLoop ();
     return 0;
 }
 
