@@ -1979,19 +1979,40 @@ void calculateAvDoWhile () {
 
 // Keep showing the menu until the user chooses option 4.
 
+void menuDoWhile () {
+    int num1, num2;
 
-// =====================================================
-// PART 5 — Guessing Game Pattern
-// =====================================================
+  
+int option;
+    do {
+    cout << "\n========== Menu ==========\n";
+    cout << "1- Add Two Numbers\n";
+    cout << "2- Multiply Two Numbers\n";
+    cout << "3- Print a Message\n";
+    cout << "4- Exit\n";
 
-// Create a secret number (for example 7).
-// Ask the user to guess the number.
-// Repeat until the correct number is guessed.
-
-// ///////////////////////////////////////////////
-
-// Ask the user to guess a number between 1 and 10.
-// Print "Too high" or "Too low" until the correct number is entered.
+    cin >> option;
+        switch (option) {
+            case 1: 
+            cout << "Enter Tow Numbers\n";
+            cin >> num1 >> num2;
+            cout << "Result:" << num1 + num2 << endl;
+            break;
+            case 2: 
+            cout << "Enter Tow Numbers\n";
+            cin >> num1 >> num2;
+            cout << "Result:" << num1 * num2 << endl;
+            break;
+            case 3: 
+            cout << "Message" << endl;
+            break;
+            case 4: 
+                break;
+            default :
+            cout << "Please Enter a Valid Option\n";
+        }
+    } while (option != 4);
+}
 
 // =====================================================
 // PART 1 — Basic For Loop Patterns
@@ -2882,7 +2903,8 @@ int main () {
     // countNumberDoWhile ();
     // trackNumberDoWhile ();
     // countEvenDoWhile ();
-    calculateAvDoWhile ();
+    // calculateAvDoWhile ();
+    menuDoWhile ();
     return 0;
 }
 
