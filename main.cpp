@@ -1674,15 +1674,63 @@ void enterNumbersLess100 () {
 // ****
 // *****
 
+void printPattern () {
+    int length;
+    cout << "Please Enter The Length\n";
+    cin >> length;
+    
+    char symbol;
+    cout << "Enter a Symbol\n";
+    cin >> symbol;
+
+    int i = 1;
+    while (i <= length) {
+        int j = 1;
+        while (j <= i) {
+            cout << symbol;
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Use a while loop to print multiplication table of a number
 // entered by the user.
 
+void printMultiplication () {
+    int num;
+    cout << "Enter a Number\n";
+    cin >> num;
+    
+    int i = 1;
+    while (i <= 10) {
+        cout << num << '*' << i << '=' << num * i << endl;
+        i++;
+    }
+}
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a number.
 // Reverse the digits of the number using a while loop.
+
+void printReverseDigit () {
+    int num;
+    cout << "Enter a Number\n";
+    cin >> num;
+     
+    int reversed = 0;
+
+    while (num != 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num /= 10;
+    }
+
+    cout << reversed << endl;
+}
 
 // =====================================================
 // Project-2 — Number Gessing Game
@@ -2653,7 +2701,10 @@ int main () {
     // secretNumber ();
     // enterPassword ();
     // enterPositiveNumber ();
-    enterNumbersLess100 ();
+    // enterNumbersLess100 ();
+    // printPattern ();
+    // printMultiplication ();
+    printReverseDigit ();
     return 0;
 }
 
@@ -2697,6 +2748,11 @@ int main () {
 //         cin.ignore(numeric_limits<streamsize>::max(), '\n');
 //         continue;
 //     }
+
+// Get Last Digit
+// digit = num % 10;
+// Remove Last Digit
+// num /= 10;
 
 
 
