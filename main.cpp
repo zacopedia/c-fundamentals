@@ -1847,17 +1847,11 @@ void askAgeDoWhile () {
 void enterBetweenDoWhile () {
     int num;
     
-
     do {
         cout << "Enter a Number Between 10 And 50\n";
         cin >> num;
     } while (num < 10 || num > 50);
 }
-// ///////////////////////////////////////////////
-
-// Ask the user to enter a positive number.
-// Keep asking until the number is greater than 0.
-
 
 // =====================================================
 // PART 3 — Accumulation Pattern
@@ -1868,6 +1862,19 @@ void enterBetweenDoWhile () {
 // Stop when the user enters 0.
 // Print the final sum.
 
+void addSumDoWhile () {
+    int num;
+    cout << "Enter Numbers\n";
+    
+    int sum = 0;
+    
+    do {
+        cin >> num;
+        sum += num;
+    } while (num != 0);
+
+    cout << sum << endl;
+}
 
 // ///////////////////////////////////////////////
 
@@ -1875,6 +1882,21 @@ void enterBetweenDoWhile () {
 // Count how many numbers were entered.
 // Stop when the user enters -1.
 
+void countNumberDoWhile () {
+    int num;
+    cout << "Enter a Numbers\n";
+    
+    int count = 0;
+
+    do {
+        cin >> num;
+        if (num != -1) {
+            count++;
+        }
+    } while (num != -1);
+    
+    cout << count << endl;
+}
 
 // ///////////////////////////////////////////////
 
@@ -1882,19 +1904,67 @@ void enterBetweenDoWhile () {
 // Track the largest number entered.
 // Stop when the user enters 0.
 
-
+void trackNumberDoWhile () {
+    int num;
+    cout << "Enter a Numbers\n";
+    
+    cin >> num;
+    int largest = num;
+    
+    do {
+        cin >> num;
+        if (num > largest) {
+        largest = num; 
+    } 
+    } while (num != 0);
+    cout << largest << endl;
+}
 // ///////////////////////////////////////////////
 
 // Ask the user to enter numbers.
 // Count how many numbers are even.
 // Stop when the user enters -1.
 
+void countEvenDoWhile () {
+    int num;
+    cout << "Enter a Number\n";
 
+    int count = 0;
+
+    do {
+        cin >> num;
+        if (num != -1 && num % 2 == 0) {
+            count++;
+        }
+
+    } while (num != -1);
+    cout << count << endl;
+}
 // ///////////////////////////////////////////////
 
 // Ask the user to enter numbers.
 // Calculate the average.
 // Stop when the user enters -1.
+
+void calculateAvDoWhile () {
+    int num;
+    cout << "Enter a Numbers\n";
+
+    int sum = 0;
+    int count = 0;
+
+    do {
+        cin >> num;
+        if (num != -1) {
+        sum += num;
+    count++;
+        }
+    } while (num != -1);
+    if (count != 0) {
+        int average = sum / count;
+        cout << average << endl;
+    }
+}
 
 // =====================================================
 // PART 4 — Menu Pattern
@@ -2807,7 +2877,12 @@ int main () {
     // printDownDoWhile ();
     // enterDoWhilePassword ();
     // askAgeDoWhile ();
-    enterBetweenDoWhile ();
+    // enterBetweenDoWhile ();
+    // addSumDoWhile ();
+    // countNumberDoWhile ();
+    // trackNumberDoWhile ();
+    // countEvenDoWhile ();
+    calculateAvDoWhile ();
     return 0;
 }
 
@@ -2857,6 +2932,9 @@ int main () {
 // Remove Last Digit
 // num /= 10;
 
+// do...while rule:
+// use (num != 0) to stop
+// and check (num != 0) inside if to avoid processing 0
 
 
 
