@@ -2066,18 +2066,6 @@ void printDiviForLoop () {
 }
 
 // =====================================================
-// PART 2 — Counting & Summation Patterns
-// =====================================================
-
-// Ask the user to enter a number n.
-// Use a for loop to calculate the sum of numbers from 1 to n.
-
-// ///////////////////////////////////////////////
-
-// Ask the user to enter a number n.
-// Use a for loop to
-
-// =====================================================
 // PART 1 — Basic Array Input / Output Pattern
 // =====================================================
 
@@ -2085,17 +2073,56 @@ void printDiviForLoop () {
 // Store them in an array.
 // Print all numbers.
 
+void printArray () {
+    
+    cout << "Enter 5 Numbers\n";
+    int arr [5];
+    for (int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "The Numbers Are:\n";
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Print them in the same order.
+
+void print10Array () {
+    cout << "Enter 10 Numbers\n";
+    int arr [10];
+    
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Numbers\n";
+    for (int i = 0; i < 10; i++) {
+        cout << arr[i] << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 5 numbers.
 // Print them in reverse order.
 
+void PrintReverseArray () {
+    cout << "Enter 5 Numbers\n";
+    int arr[5];
 
+    for (int i = 0; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    for (int i = 5; i >= 0; i--) {
+        cout << arr[i] << endl;
+    }
+ }
 // =====================================================
 // PART 2 — Summation Pattern
 // =====================================================
@@ -2379,6 +2406,219 @@ void printDiviForLoop () {
 // =====================================================
 
 // =====================================================
+// PART 1 — Basic Vector Traversal Pattern
+// =====================================================
+
+// Create a vector with some numbers.
+// Print all elements using a loop.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector with 10 numbers.
+// Print only elements at even indices.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector with 10 numbers.
+// Print elements in reverse order.
+
+
+// =====================================================
+// PART 2 — Input + Dynamic Size Pattern
+// =====================================================
+
+// Create an empty vector.
+// Ask the user to enter numbers.
+// Stop when the user enters -1.
+// Print all elements.
+
+
+// ///////////////////////////////////////////////
+
+// Ask the user how many numbers he wants to enter.
+// Store them in a vector.
+// Print all elements.
+
+
+// ///////////////////////////////////////////////
+
+// Ask the user to enter numbers.
+// Store them in a vector.
+// Print the size of the vector.
+
+
+// =====================================================
+// PART 3 — Summation Pattern
+// =====================================================
+
+// Create a vector of numbers.
+// Calculate the sum of all elements.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector of numbers.
+// Calculate the average.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Print the sum of even numbers only.
+
+
+// =====================================================
+// PART 4 — Searching Pattern
+// =====================================================
+
+// Create a vector.
+// Ask the user for a number.
+// Check if the number exists in the vector.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Count how many times a number appears.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Find the index of a given number.
+
+
+// =====================================================
+// PART 5 — Maximum / Minimum Pattern
+// =====================================================
+
+// Create a vector.
+// Find the largest element.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Find the smallest element.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Find the difference between max and min.
+
+
+// =====================================================
+// PART 6 — Counting Pattern
+// =====================================================
+
+// Create a vector.
+// Count how many numbers are even.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Count how many numbers are positive.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Count how many numbers are greater than 100.
+
+
+// =====================================================
+// PART 7 — Transformation Pattern
+// =====================================================
+
+// Create a vector.
+// Multiply each element by 2.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Replace negative numbers with 0.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Create another vector storing squares of elements.
+
+
+// =====================================================
+// PART 8 — Modification Pattern (VECTOR SPECIAL)
+// =====================================================
+
+// Create a vector.
+// Add an element at the end using push_back.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Remove the last element using pop_back.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Insert an element at the beginning.
+
+
+// =====================================================
+// PART 9 — Comparison Pattern
+// =====================================================
+
+// Create a vector.
+// Find the second largest number.
+
+
+// ///////////////////////////////////////////////
+
+// Create a vector.
+// Check if the vector is sorted in ascending order.
+
+
+// =====================================================
+// PART 10 — Two Vectors Pattern
+// =====================================================
+
+// Create two vectors.
+// Add corresponding elements and store in a third vector.
+
+
+// ///////////////////////////////////////////////
+
+// Copy all elements from one vector to another.
+
+
+// ///////////////////////////////////////////////
+
+// Reverse a vector into another vector.
+
+
+// =====================================================
+// PART 11 — Advanced Thinking (IMPORTANT)
+// =====================================================
+
+// Remove all even numbers from a vector.
+
+
+// ///////////////////////////////////////////////
+
+// Remove duplicate elements from a vector.
+
+
+// ///////////////////////////////////////////////
+
+// Move all zeros to the end of the vector.
+
+// =====================================================
 // PART 1 — Basic Return Value Patterns
 // =====================================================
 
@@ -2629,6 +2869,41 @@ void printDiviForLoop () {
 // (divisible by the sum of its digits).
 
 // =====================================================
+// PART 10 — Two Pointers & Sliding Window
+// =====================================================
+
+// DAY 1 — Two Pointers
+// Find pair with sum = X in sorted array
+// Reverse array using two pointers
+// Reverse string using two pointers
+// Check palindrome using two pointers
+// Move all zeros to the end
+// Remove duplicates from sorted array
+// Find pair with difference = X
+// Merge two sorted arrays
+// Find common elements in two arrays
+// Check if array is sorted
+
+
+// DAY 2 — Sliding Window
+// Maximum sum subarray of size K
+// Minimum sum subarray of size K
+// Count subarrays with sum = X
+// Find average of subarrays of size K
+// Count subarrays with all positive numbers
+// Find longest subarray with sum <= X
+// Find shortest subarray with sum >= X
+// Count vowels in substring of size K
+// Maximum number of even numbers in window
+// Minimum number of odd numbers in window
+
+// =====================================================
+// LeetCode
+   // Pattern 5 → Two Pointers
+   // Pattern 6 → Sliding Window
+// =====================================================
+
+// =====================================================
 // Start arduino
 // =====================================================
 
@@ -2702,46 +2977,14 @@ void printDiviForLoop () {
    // Pattern 11 → Recursion
 // =====================================================
 
-// =====================================================
-// PART 10 — Two Pointers & Sliding Window
-// =====================================================
-
-// DAY 1 — Two Pointers
-// Find pair with sum = X in sorted array
-// Reverse array using two pointers
-// Reverse string using two pointers
-// Check palindrome using two pointers
-// Move all zeros to the end
-// Remove duplicates from sorted array
-// Find pair with difference = X
-// Merge two sorted arrays
-// Find common elements in two arrays
-// Check if array is sorted
-
-
-// DAY 2 — Sliding Window
-// Maximum sum subarray of size K
-// Minimum sum subarray of size K
-// Count subarrays with sum = X
-// Find average of subarrays of size K
-// Count subarrays with all positive numbers
-// Find longest subarray with sum <= X
-// Find shortest subarray with sum >= X
-// Count vowels in substring of size K
-// Maximum number of even numbers in window
-// Minimum number of odd numbers in window
-
-// =====================================================
-// LeetCode
-   // Pattern 5 → Two Pointers
-   // Pattern 6 → Sliding Window
-// =====================================================
+// Advanced
 
 // =====================================================
 // Start LeetCode
   // Pattern 7 → Hash Map (Frequency Map)
 // =====================================================
 
+// Data Structure: Stack / Queue / Linked List / Tree
 // =====================================================
 // PART 11 — Stack & Queue Basics
 // =====================================================
@@ -2815,7 +3058,7 @@ void printDiviForLoop () {
 // =====================================================
 
 // =====================================================
-// PART 14 — Advanced (LATER — DO NOT RUSH)
+// PART 14 — Very Advanced (LATER — DO NOT RUSH)
 // =====================================================
 
 // Dynamic Programming (basic)
@@ -2935,7 +3178,10 @@ int main () {
     // printDoLoop ();
     // printDownForLoop ();
     // printEvenOddForLoop ();
-    printDiviForLoop ();
+    // printDiviForLoop ();
+    // printArray ();
+    // print10Array ();
+    PrintReverseArray ();
     return 0;
 }
 
