@@ -2317,16 +2317,58 @@ void findDiffrenceArr () {
 // Ask the user to enter 10 numbers.
 // Count how many numbers are even.
 
+void countEvenArr () {
+    cout << "Enter 10 Numbers\n";
+    int arr[10];
+    int count = 0;
+
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] % 2 == 0) {
+            count++;
+        }
+    }
+    cout << count << "Even Numbers\n";
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Count how many numbers are positive.
 
+void countPositiveArrNum () {
+    cout << "Enter 10 Numbers\n";
+
+    int arr[10];
+    int count = 0;
+
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] > 0) {
+            count++;
+        }
+    }
+    cout << count << "Positive Numbers\n";
+}
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Count how many numbers are greater than 50.
 
+void countGreaterArr () {
+    cout << "Enter 10 Numbers\n";
+
+    int arr[10];
+    int count = 0;
+
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] > 50) {
+            count++;
+        }
+    }
+    cout << count << "Numbers\n";
+}
 
 // =====================================================
 // PART 6 — Transformation Pattern
@@ -3326,7 +3368,10 @@ int main () {
     // countAppearArray ();
     // findLargesArrnum ();
     // findSmallestArrnum ();
-    findDiffrenceArr ();
+    // findDiffrenceArr ();
+    // countEvenArr ();
+    // countPositiveArrNum ();
+    countGreaterArr ();
     return 0;
 }
 
