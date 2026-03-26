@@ -2378,16 +2378,63 @@ void countGreaterArr () {
 // Multiply every element by 2.
 // Print the updated array.
 
+void printUpdatedArr () {
+    cout << "Enter 5 Numbers\n";
+
+    int arr[5];
+
+    for (int i = 0; i < 5; i++) {
+        cin >> arr[i];
+        arr[i] *= 2;
+    }
+
+    for (int i = 0; i < 5; i++) {
+        cout << "Multiplication " << arr[i] << endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 5 numbers.
 // Replace every negative number with 0.
+
+void replaceArrNum () {
+    cout << "Enter 5 Numbers\n";
+
+    int arr[5];
+
+    for (int i = 0; i < 5; i++) {
+        cin >> arr[i];
+        if (arr[i] < 0) {
+            arr[i] = 0;
+        }
+        cout << arr[i] << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Create another array storing the square of each number.
 
+void sotreArr () {
+    cout << "Enter 10 Numbers\n";
+    
+    int arr[10];
+    int squareArr[10];
+    
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        squareArr[i] = arr[i] * arr[i];
+        // arr[i] = squareArr;
+    }
+
+    cout << "The Square Of Each Number Is\n"; 
+    for (int i = 0; i < 10; i++) {
+    cout << squareArr[i] << endl;
+    }
+
+}
 
 // =====================================================
 // PART 7 — Comparison Pattern
@@ -3371,7 +3418,10 @@ int main () {
     // findDiffrenceArr ();
     // countEvenArr ();
     // countPositiveArrNum ();
-    countGreaterArr ();
+    // countGreaterArr ();
+    // printUpdatedArr ();
+    // replaceArrNum ();
+    sotreArr ();
     return 0;
 }
 
