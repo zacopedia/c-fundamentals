@@ -2122,7 +2122,8 @@ void PrintReverseArray () {
     for (int i = 5; i >= 0; i--) {
         cout << arr[i] << endl;
     }
- }
+}
+
 // =====================================================
 // PART 2 — Summation Pattern
 // =====================================================
@@ -2130,16 +2131,57 @@ void PrintReverseArray () {
 // Ask the user to enter 10 numbers.
 // Calculate the sum of all numbers.
 
+void calculateArraySum () {
+    cout << "Enter 10 Numbers\n";
+    int arr[10];
+    int sum = 0;
+
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        sum += arr[i];
+    }
+
+        cout << "The Sum: "<< sum << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Calculate the average of the numbers.
+
+void calculateAveArray () {
+    cout << "Enter 10 Numbers\n";
+    int arr[10];
+    int sum = 0;
+    
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        sum += arr[i];
+    }
+
+    double average = sum / 10;
+    cout << "The Average is:" << average << endl;
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 5 numbers.
 // Print the total sum of even numbers only.
 
+void printEvenArray () {
+    cout << "Enter 5 Numbers\n";
+    int arr[5];
+    int sum = 0;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> arr[i];
+        if (arr[i] % 2 == 0) {
+            sum += arr[i];
+        }
+    }
+    
+    cout << "The Total Sum is:" << sum << endl;
+}
 
 // =====================================================
 // PART 3 — Searching Pattern
@@ -2149,12 +2191,51 @@ void PrintReverseArray () {
 // Ask the user for another number.
 // Check if the number exists in the array.
 
+void checkExistArray () {
+    cout << "Enter 10 Numbers\n";
+    int arr[10];
+
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+    }
+    
+    int num2;
+    cout << "Enter Another Number\n";
+    cin >> num2;
+    bool found = false;
+
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] == num2) {
+            found = true;
+        break;
+    } 
+
+    } if (found) {
+        cout << "Correct\n";
+    } else {
+        cout << "Wrong\n";
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Count how many times the number 5 appears.
 
+void countAppearArray () {
+    cout << "Enter 10 Numbers\n";
+    int arr[10];
+    int count = 0;
 
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] == 5) {
+            count++;
+        }
+    }
+
+    cout << "The Number Appears: " << count << endl;
+}
 // =====================================================
 // PART 4 — Maximum / Minimum Pattern
 // =====================================================
@@ -2162,15 +2243,71 @@ void PrintReverseArray () {
 // Ask the user to enter 10 numbers.
 // Find the largest number.
 
+void findLargesArrnum () {
+    cout << "Enter 10 Numbers\n";
+
+    int arr[10];
+
+    // Read First Number
+    cin >> arr[0];
+    int largest = arr[0];
+
+    // Read Rest And Compare
+    for (int i = 1; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+    cout << "The Largest Number Is:" << largest << endl;
+}
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Find the smallest number.
 
+void findSmallestArrnum () {
+    cout << "Enter 10 Numbers\n";
+
+    int arr[10];
+
+    cin >> arr[0];
+    int smallest = arr[0];
+
+    for (int i = 1; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+
+    cout << "The Smallest Number Is:" << smallest << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
 // Find the difference between the largest and smallest number.
+
+void findDiffrenceArr () {
+    cout << "Enter 10 Numbers\n";
+
+    int arr[10];
+    cin >> arr[0];
+    int largest = arr[0];
+    int smallest = arr[0];
+    
+    for (int i = 1; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] > largest) {
+            largest = arr[i];
+        } if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+    int diffrence = largest - smallest;
+    cout << "Diffrence Of Numbers Is:" << diffrence;
+}
 
 
 // =====================================================
@@ -3181,7 +3318,15 @@ int main () {
     // printDiviForLoop ();
     // printArray ();
     // print10Array ();
-    PrintReverseArray ();
+    // PrintReverseArray ();
+    // calculateArraySum ();
+    // calculateAveArray ();
+    // printEvenArray ();
+    // checkExistArray ();
+    // countAppearArray ();
+    // findLargesArrnum ();
+    // findSmallestArrnum ();
+    findDiffrenceArr ();
     return 0;
 }
 
@@ -3235,7 +3380,8 @@ int main () {
 // use (num != 0) to stop
 // and check (num != 0) inside if to avoid processing 0
 
-
+// Linear Search
+// loop → compare → found? → stop
 
 
 
