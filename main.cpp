@@ -2478,6 +2478,30 @@ void find2LargeArr () {
 // Ask the user to enter 10 numbers.
 // Check if the array is sorted in ascending order.
 
+void checkSortArr () {
+    cout << "Enter 5 Numbers\n";
+
+    int arr[5];
+
+    for (int i = 1; i < 5; i++) {
+        cin >> arr[i];
+    }
+
+    bool sorted = true;
+
+    for (int i = 1; i < 5; i++) {
+        if (arr[i] > arr[i + 1]) {
+            sorted = false;
+            break;
+        }
+    }
+
+    if (sorted) {
+        cout << "Sorted\n";
+    } else {
+        cout << "Not Sorted\n";
+    }
+}
 
 // =====================================================
 // PART 8 — Two Arrays Pattern
@@ -2487,15 +2511,76 @@ void find2LargeArr () {
 // Ask the user to enter 5 numbers for array B.
 // Print the sum of corresponding elements.
 
+void print2rray () {
+    int arrA[5];
+    int arrB[5];
+
+    cout << "Enter 5 Numbers Arr A\n";
+    for (int i = 0; i < 5; i++) {
+        cin >> arrA[i];
+    } 
+
+    cout << "Enter 5 Numbers Arr B\n";
+    for (int i = 0; i < 5; i++) {
+        cin >> arrB[i];
+    }
+
+    cout << "The Sum Of Corresponding Elements Is:\n";
+     for (int i = 0; i < 5; i++) {
+        cout << arrA[i] + arrB[i] <<endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 5 numbers for array A.
 // Copy the elements into another array B.
 
+void copyIntoArr () {
+    cout << "Enter 5 Numbers\n";
+
+    int arrA[5];
+    int arrB[5];
+
+    for (int i = 0; i < 5; i++) {
+        cin >> arrA[i];
+        arrB[i] = arrA[i];
+    }
+    
+    cout << "The Array B\n";
+    for (int i = 0; i < 5; i++) {
+        cout << arrB[i] << endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 5 numbers.
 // Reverse the array into another array.
+
+void reverseArr () {
+    cout << "Enter 5 Numbers\n";
+
+    int arrA[5];
+    int arrB[5];
+    
+    // Input 
+    for (int i = 0; i < 5; i++) {
+        cin >> arrA[i];
+    }
+    
+    // Reverse Into B
+    for (int i = 0; i < 5; i++) {
+        arrB[i] = arrA[5 - 1 -i];
+    }
+    
+    // Output
+    cout << "The Array B\n";
+    for (int i = 0; i < 5; i++) {
+        cout << arrB[i] << endl;
+    }
+}
+
 
 // =====================================================
 // LeetCode
@@ -3452,7 +3537,11 @@ int main () {
     // printUpdatedArr ();
     // replaceArrNum ();
     // sotreArr ();
-    find2LargeArr ();
+    // find2LargeArr ();
+    // checkSortArr ();
+    // print2rray ();
+    // copyIntoArr ();
+    reverseArr ();
     return 0;
 }
 
@@ -3511,6 +3600,9 @@ int main () {
 
 // Find Second Largest Number
 // You must save old data BEFORE replacing it
+
+// Reverse formula: B[i] = A[n - 1 - i]
+// Idea: i goes forward, (n - 1 - i) goes backward
 
 
 
