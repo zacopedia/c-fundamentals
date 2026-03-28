@@ -2443,6 +2443,36 @@ void sotreArr () {
 // Ask the user to enter 5 numbers.
 // Find the second largest number.
 
+void find2LargeArr () {
+    cout << "Enter 5 Numbers\n";
+
+    int arr[5];
+    cin >> arr[0];
+    cin >> arr[1];
+    
+    int largest, secLargest;
+
+    // Define Largest and Second Largest Number 
+    if (arr[0] > arr[1]) {
+        largest = arr[0];
+        secLargest = arr[1];
+    } else {
+        largest = arr[1];
+        secLargest = arr[0];
+    }
+
+    for (int i = 2; i < 5; i++) {
+        cin >> arr[i];
+        if (arr[i] > largest) {
+            secLargest = largest;
+            largest = arr[i];
+        } else if (arr[i] > secLargest && arr[i] != largest) {
+            secLargest = arr[i];
+        }
+    }
+    cout << "The Second Largest Number Is: " << secLargest << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter 10 numbers.
@@ -3421,7 +3451,8 @@ int main () {
     // countGreaterArr ();
     // printUpdatedArr ();
     // replaceArrNum ();
-    sotreArr ();
+    // sotreArr ();
+    find2LargeArr ();
     return 0;
 }
 
@@ -3478,7 +3509,8 @@ int main () {
 // Linear Search
 // loop → compare → found? → stop
 
-
+// Find Second Largest Number
+// You must save old data BEFORE replacing it
 
 
 
