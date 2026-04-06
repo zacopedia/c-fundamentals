@@ -2581,7 +2581,6 @@ void reverseArr () {
     }
 }
 
-
 // =====================================================
 // LeetCode
    // Pattern 1 → Array Traversal (FULL)
@@ -2600,20 +2599,30 @@ void reverseArr () {
 // Ask the user to enter their name.
 // Print the name.
 
+void printStr () {
+    cout << "Enter Your Name\n";
+    string name;
+    cin >> name;
+
+    cout << "Hello " << name << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
 // Print the length of the word.
-
-// ///////////////////////////////////////////////
-
-// Ask the user to enter a word.
 // Print the first character.
-
-// ///////////////////////////////////////////////
-
-// Ask the user to enter a word.
 // Print the last character.
+
+void printLengStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline(cin, worde);
+
+    cout << "The Length Of The Word Is: " << worde.length() << endl;
+    cout << "The First Character Is:" << worde.at(0) << endl;
+    cout << "The Last Character Is:" << worde.at(worde.length() - 1) << endl;
+}
 
 
 // =====================================================
@@ -3541,7 +3550,9 @@ int main () {
     // checkSortArr ();
     // print2rray ();
     // copyIntoArr ();
-    reverseArr ();
+    // reverseArr ();
+    // printStr ();
+    printLengStr ();
     return 0;
 }
 
@@ -3604,8 +3615,17 @@ int main () {
 // Reverse formula: B[i] = A[n - 1 - i]
 // Idea: i goes forward, (n - 1 - i) goes backward
 
+// 🧠 Easy way to remember
+// 👉 If problem says:
+// “for each element…”
+// “check with others…”
+// 👉 💥 Nested loop
 
-
+// ⚠️ Difference
+// 🔹 break
+// 👉 Stops ONLY the loop
+// 🔹 return
+// 👉 Stops the WHOLE function
 
 
 
