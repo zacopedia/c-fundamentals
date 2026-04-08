@@ -2738,17 +2738,59 @@ void countDigitStr () {
 // Ask the user to enter a word.
 // Check if the word contains the letter 'a'.
 
+void checkWordStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline(cin, worde);
+
+    bool contain = false;
+
+    for (int i = 0; i < worde.length(); i++) {
+        if (worde[i] == 'a') {
+            contain = true;
+        }
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a sentence.
 // Count how many times the letter 'e' appears.
+
+void countletterStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline(cin, worde);
+
+    int count = 0;
+
+    for (int i = 0; i < worde.length(); i++) {
+        if (worde[i] == 'e') {
+            count++;
+        }
+    }
+
+    cout << count << endl;
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
 // Check if the word starts with the letter 'A'.
 
+void checkStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline(cin, worde);
 
+    bool startLetter = false;
+
+    for (int i = 0; i < worde.length(); i++) {
+        if (worde[0] == 'A') {
+            startLetter = true;
+        }
+    }
+}
 // =====================================================
 // PART 5 — Transformation Pattern
 // =====================================================
@@ -3626,7 +3668,8 @@ int main () {
     // countCharaStr ();
     // countSpaceStr ();
     // countVowelStr ();
-    countDigitStr ();
+    // countDigitStr ();
+    countletterStr ();
     return 0;
 }
 
