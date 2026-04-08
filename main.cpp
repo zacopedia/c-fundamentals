@@ -2695,10 +2695,9 @@ void countVowelStr () {
     int vowelCount = 0;
     int constCout = 0;
 
-
     for (int i = 0; i < worde.length(); i++) {
         if (worde[i] >= 'a' && worde[i] <= 'z') {
-            
+
             if (worde[i] == 'a' || worde[i] == 'e' || worde[i] == 'i'
                 || worde[i] == 'o' || worde[i] == 'u' ) {
                 vowelCount++;
@@ -2715,14 +2714,23 @@ void countVowelStr () {
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
-
-
-// ///////////////////////////////////////////////
-
-// Ask the user to enter a word.
 // Count how many digits appear in the word.
 
+void countDigitStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    cin >> worde;
 
+    int count = 0;
+
+    for (int i = 0; i < worde.length(); i++){
+        if (worde[i] >= '0' && worde[i] <= '9') {
+            count++;
+        }
+    }
+
+    cout << count << endl;
+}
 // =====================================================
 // PART 4 — Searching Pattern
 // =====================================================
@@ -3617,7 +3625,8 @@ int main () {
     // printnewlineStr (); 
     // countCharaStr ();
     // countSpaceStr ();
-    countVowelStr ();
+    // countVowelStr ();
+    countDigitStr ();
     return 0;
 }
 
