@@ -2624,7 +2624,6 @@ void printLengStr () {
     cout << "The Last Character Is:" << worde.at(worde.length() - 1) << endl;
 }
 
-
 // =====================================================
 // PART 2 — Character Traversal Pattern
 // =====================================================
@@ -2632,29 +2631,91 @@ void printLengStr () {
 // Ask the user to enter a word.
 // Print each character on a new line.
 
+void printnewlineStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline(cin, worde);
+
+    for (int i = 0; i < worde.length(); i++) {
+        cout << worde[i]<< endl;
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
 // Count how many characters the word contains
-// using a loop.
 
+void countCharaStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline(cin, worde);
+
+    int count = 0;
+
+    for (int i = 0; i < worde.length(); i++) {
+        count++;
+    } 
+
+    cout << "There Is " << count << " Characters\n";
+}
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a sentence.
 // Count how many spaces it contains.
 
+void countSpaceStr () {
+    cout << "Enter a Sentence\n";
+    string worde;
+    getline (cin, worde);
 
+    int count = 0;
+
+    for (int i = 0; i < worde.length(); i++) {
+        if (worde[i] == ' ') {
+            count++;
+        }
+    }
+
+    cout << "There Is " << count << " Spaces\n";
+}
 // =====================================================
 // PART 3 — Counting Pattern
 // =====================================================
 
 // Ask the user to enter a word.
 // Count how many vowels it contains.
+// Count how many consonants it contains.
+
+void countVowelStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline (cin, worde);
+
+    int vowelCount = 0;
+    int constCout = 0;
+
+
+    for (int i = 0; i < worde.length(); i++) {
+        if (worde[i] >= 'a' && worde[i] <= 'z') {
+            
+            if (worde[i] == 'a' || worde[i] == 'e' || worde[i] == 'i'
+                || worde[i] == 'o' || worde[i] == 'u' ) {
+                vowelCount++;
+            } else {
+                constCout++;
+            }
+        }
+    }
+
+    cout << vowelCount << " Vowel\n";
+    cout << constCout << " Consonant\n";
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
-// Count how many consonants it contains.
+
 
 // ///////////////////////////////////////////////
 
@@ -3552,7 +3613,11 @@ int main () {
     // copyIntoArr ();
     // reverseArr ();
     // printStr ();
-    printLengStr ();
+    // printLengStr ();
+    // printnewlineStr (); 
+    // countCharaStr ();
+    // countSpaceStr ();
+    countVowelStr ();
     return 0;
 }
 
