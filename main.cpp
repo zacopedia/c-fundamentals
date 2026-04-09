@@ -2798,17 +2798,57 @@ void checkStr () {
 // Ask the user to enter a word.
 // Convert all letters to uppercase.
 
+void convertletterStr () {
+    cout << "Enter a Word\n";
+    string worde;
+    getline(cin, worde);
+
+    for (int i = 0; i < worde.length(); i++) {
+        if (worde[i] >= 'a' && worde[i] <= 'z') {
+            worde[i] = worde[i] - 32;
+        }
+    }
+
+    cout << worde << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
 // Convert all letters to lowercase.
+
+void convertLowerStr () {
+    cout << "Enter a Word\n";
+    string word;
+    getline(cin, word);
+
+    for (int i = 0; i < word.length(); i++) {
+        if (word[i] >= 'A' && word[i] <= 'Z') {
+            word[i] = word[i] + 32;
+        }
+    }
+
+    cout << word << endl;
+}
 
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
 // Replace every 'a' with '*'.
 
+void replaceStr () {
+    cout << "Enter a Word\n";
+    string word;
+    getline(cin, word);
 
+    for (int i = 0; i < word.length(); i++) {
+        if (word[i] == 'a' ) {
+            word[i] = '*';
+        }
+    }
+
+    cout << word << endl;
+}
 // =====================================================
 // PART 6 — Reverse Pattern
 // =====================================================
@@ -3669,7 +3709,10 @@ int main () {
     // countSpaceStr ();
     // countVowelStr ();
     // countDigitStr ();
-    countletterStr ();
+    // countletterStr ();
+    // convertletterStr ();
+    // convertLowerStr ();
+    replaceStr ();
     return 0;
 }
 
