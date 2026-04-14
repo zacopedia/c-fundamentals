@@ -2885,7 +2885,7 @@ void printReveStr () {
 void checkEqualStr () {
     cout << "Emter Two Words\n";
     string word1, word2;
-  
+
     cin >> word1 >> word2;
 
     if (word1 == word2) {
@@ -2894,7 +2894,7 @@ void checkEqualStr () {
 
     else {
         cout << "Wrong" << endl;
-   }
+    }
 }
 
 // ///////////////////////////////////////////////
@@ -2902,10 +2902,36 @@ void checkEqualStr () {
 // Ask the user to enter two words.
 // Determine which word is longer.
 
+void longerStr () {
+    cout << "Emter Two Words\n";
+    string word1, word2;
+    cin >> word1 >> word2;
+
+    if (word1.length() > word2.length()) {
+        cout << word1 << " Is Longer\n";
+    } else if (word1.length() < word2.length()) {
+        cout << word2 << " Is Longer\n";
+    } else {
+        cout << "The Two Words Are Equal\n";
+    }
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter two words.
 // Print them in alphabetical order.
+
+void printAlphabetStr () {
+    cout << "Emter Two Words\n";
+    string word1, word2;
+    cin >> word1 >> word2;
+
+    if (word1 < word2) {
+        cout << word1 << " " << word2 << endl;
+    } else {
+        cout << word2 << " " << word1 << endl;
+    }
+}
 
 
 // =====================================================
@@ -3742,7 +3768,9 @@ int main () {
     // convertLowerStr ();
     // replaceStr ();
     // printReveStr ();
-    checkEqualStr ();
+    // checkEqualStr ();
+    // longerStr ();
+    printAlphabetStr ();
     return 0;
 }
 
