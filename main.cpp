@@ -2856,6 +2856,19 @@ void replaceStr () {
 // Ask the user to enter a word.
 // Print the word in reverse order.
 
+void printReveStr () {
+    cout << "Enter a Word\n";
+    string word;
+    string reversed;
+    getline(cin, word);
+
+    for (int i = word.length() - 1; i >= 0 ; i--) {
+        reversed += word[i];
+    }
+
+    cout << reversed << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
@@ -2868,6 +2881,21 @@ void replaceStr () {
 
 // Ask the user to enter two words.
 // Check if they are equal.
+
+void checkEqualStr () {
+    cout << "Emter Two Words\n";
+    string word1, word2;
+  
+    cin >> word1 >> word2;
+
+    if (word1 == word2) {
+            cout << "Correct" << endl;
+        }
+
+    else {
+        cout << "Wrong" << endl;
+   }
+}
 
 // ///////////////////////////////////////////////
 
@@ -3712,7 +3740,9 @@ int main () {
     // countletterStr ();
     // convertletterStr ();
     // convertLowerStr ();
-    replaceStr ();
+    // replaceStr ();
+    // printReveStr ();
+    checkEqualStr ();
     return 0;
 }
 
