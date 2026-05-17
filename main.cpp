@@ -2941,15 +2941,52 @@ void printAlphabetStr () {
 // Ask the user to enter a word.
 // Create a new string that duplicates the word.
 
+void duplicateStrWord () {
+    cout << "Enter a Word\n";
+    string word;
+    cin >> word;
+
+    string duplicate;
+    
+    for (int i = 0; i < 2; i++) {
+        duplicate += word;
+    }
+
+    cout << duplicate << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter two words.
 // Combine them into a single string.
 
+void combineSingleStr () {
+    cout << "Emter Two Words\n";
+    string word1, word2;
+    cin >> word1 >> word2;
+
+    string combine = word1 + " " + word2;
+
+    cout << combine << endl;
+}
+
 // ///////////////////////////////////////////////
 
 // Ask the user to enter a word.
 // Repeat the word 5 times in a new string.
+
+void repeatStr () {
+    cout << "Enter a Word\n";
+    string word;
+    cin >> word;
+    
+    string newStr;
+    for (int i = 0; i < 5; i++) {
+        newStr += word;
+
+    }
+    cout << newStr << endl;
+}
 
 // =====================================================
 // LeetCode
@@ -2959,6 +2996,120 @@ void printAlphabetStr () {
   // - counting vowels
   // - reversing strings
 // =====================================================
+
+
+// =====================================================
+// PART 1 — Basic Return Value Patterns
+// =====================================================
+
+// Create a function that takes a number as a parameter.
+// Return the square of the number.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes a number as a parameter.
+// Return the cube of the number.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes two numbers.
+// Return their sum.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes two numbers.
+// Return their product.
+
+
+// =====================================================
+// PART 2 — Comparison Return Patterns
+// =====================================================
+
+// Create a function that takes two numbers.
+// Return the larger number.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes two numbers.
+// Return the smaller number.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes three numbers.
+// Return the largest number.
+
+
+// =====================================================
+// PART 3 — Boolean Return Patterns
+// =====================================================
+
+// Create a function that takes a number.
+// Return true if the number is even.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes a number.
+// Return true if the number is positive.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes a number.
+// Return true if the number is divisible by 5.
+
+
+// =====================================================
+// PART 4 — Mathematical Return Patterns
+// =====================================================
+
+// Create a function that takes a number.
+// Return its factorial.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes two numbers.
+// Return the average of the numbers.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes the radius of a circle.
+// Return the area of the circle.
+
+
+// =====================================================
+// PART 5 — Algorithm Return Patterns
+// =====================================================
+
+// Create a function that takes a number.
+// Return the reverse of the number.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes a number.
+// Return true if the number is a prime number.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes a number.
+// Return the sum of its digits.
+
+
+// =====================================================
+// PART 6 — String Return Patterns
+// =====================================================
+
+// Create a function that takes a string.
+// Return the length of the string.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes a string.
+// Return the reversed string.
+
+// ///////////////////////////////////////////////
+
+// Create a function that takes a string.
+// Return true if the string is a palindrome.
+
 
 // =====================================================
 // PART 1 — Basic Vector Traversal Pattern
@@ -3172,118 +3323,6 @@ void printAlphabetStr () {
 // ///////////////////////////////////////////////
 
 // Move all zeros to the end of the vector.
-
-// =====================================================
-// PART 1 — Basic Return Value Patterns
-// =====================================================
-
-// Create a function that takes a number as a parameter.
-// Return the square of the number.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a number as a parameter.
-// Return the cube of the number.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes two numbers.
-// Return their sum.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes two numbers.
-// Return their product.
-
-
-// =====================================================
-// PART 2 — Comparison Return Patterns
-// =====================================================
-
-// Create a function that takes two numbers.
-// Return the larger number.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes two numbers.
-// Return the smaller number.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes three numbers.
-// Return the largest number.
-
-
-// =====================================================
-// PART 3 — Boolean Return Patterns
-// =====================================================
-
-// Create a function that takes a number.
-// Return true if the number is even.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a number.
-// Return true if the number is positive.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a number.
-// Return true if the number is divisible by 5.
-
-
-// =====================================================
-// PART 4 — Mathematical Return Patterns
-// =====================================================
-
-// Create a function that takes a number.
-// Return its factorial.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes two numbers.
-// Return the average of the numbers.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes the radius of a circle.
-// Return the area of the circle.
-
-
-// =====================================================
-// PART 5 — Algorithm Return Patterns
-// =====================================================
-
-// Create a function that takes a number.
-// Return the reverse of the number.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a number.
-// Return true if the number is a prime number.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a number.
-// Return the sum of its digits.
-
-
-// =====================================================
-// PART 6 — String Return Patterns
-// =====================================================
-
-// Create a function that takes a string.
-// Return the length of the string.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a string.
-// Return the reversed string.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a string.
-// Return true if the string is a palindrome.
 
 
 // =====================================================
@@ -3569,6 +3608,13 @@ void printAlphabetStr () {
 // Find first non-repeating character using queue
 // Simple BFS traversal simulation
 
+
+// 1. OOP
+// 2. SQL
+// 3. Backend
+// 4. Design Patterns
+// 5. System Design
+
 // =====================================================
 // Start LeetCode
   // Pattern 9 → Stack
@@ -3770,7 +3816,10 @@ int main () {
     // printReveStr ();
     // checkEqualStr ();
     // longerStr ();
-    printAlphabetStr ();
+    // printAlphabetStr ();
+    // duplicateStrWord ();
+    // combineSingleStr ();
+    repeatStr ();
     return 0;
 }
 
