@@ -3014,15 +3014,27 @@ int funSquare (int num) {
 // Create a function that takes a number as a parameter.
 // Return the cube of the number.
 
+int funCube (int num) {
+    return num * num * num;
+}
+
 // ///////////////////////////////////////////////
 
 // Create a function that takes two numbers.
 // Return their sum.
 
+int funSum (int num, int num1) {
+    return  num + num1;
+}
+
 // ///////////////////////////////////////////////
 
 // Create a function that takes two numbers.
 // Return their product.
+
+int funProduct (int num, int num1) {
+    return  num * num1;
+}
 
 
 // =====================================================
@@ -3824,7 +3836,10 @@ int main () {
     // duplicateStrWord ();
     // combineSingleStr ();
     // repeatStr ();
-    funSquare ();
+    // funSquare ();
+    // funCube ();
+    // funSum ();
+    funProduct ();
     return 0;
 }
 
