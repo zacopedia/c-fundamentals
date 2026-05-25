@@ -3005,6 +3005,10 @@ void repeatStr () {
 // Create a function that takes a number as a parameter.
 // Return the square of the number.
 
+int funSquare (int num) {
+    return num * num;
+}
+
 // ///////////////////////////////////////////////
 
 // Create a function that takes a number as a parameter.
@@ -3819,7 +3823,8 @@ int main () {
     // printAlphabetStr ();
     // duplicateStrWord ();
     // combineSingleStr ();
-    repeatStr ();
+    // repeatStr ();
+    funSquare ();
     return 0;
 }
 
