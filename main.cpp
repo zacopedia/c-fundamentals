@@ -3044,16 +3044,30 @@ int funProduct (int num, int num1) {
 // Create a function that takes two numbers.
 // Return the larger number.
 
-// ///////////////////////////////////////////////
-
-// Create a function that takes two numbers.
-// Return the smaller number.
+int funLarger (int num, int num1) {
+    if (num > num1) {
+        return num;
+    } else {
+        return num1;
+    }
+    
+}
 
 // ///////////////////////////////////////////////
 
 // Create a function that takes three numbers.
 // Return the largest number.
 
+int funLarger3Nums (int num, int num1, int num2) {
+    if (num >= num1 && num >= num2 ) {
+        return num;
+    } else if (num1 >= num && num1 >= num2) {
+        return num1;
+    }  else{
+        return num2;
+    }
+
+}
 
 // =====================================================
 // PART 3 — Boolean Return Patterns
@@ -3839,7 +3853,8 @@ int main () {
     // funSquare ();
     // funCube ();
     // funSum ();
-    funProduct ();
+    // funProduct ();
+    funLarger ();
     return 0;
 }
 
