@@ -3092,7 +3092,17 @@ int funReverse (int num) {
 // Create a function that takes a number.
 // Return true if the number is a prime number.
 
-
+bool funPrime (int num) {
+    if (num <= 1) {
+        return false;
+    }
+    for (int i = 2; i < num; i++) {
+            if (num % i == 0 ) {
+        return false;
+    }
+    }
+    return true;
+}
 
 // ///////////////////////////////////////////////
 
@@ -3834,7 +3844,8 @@ int main () {
     // cout << funLarger (6,9) << endl;
     // cout << funLarger3Nums (8,4,9) << endl;
     // cout << funReverse (8546) << endl;
-    cout << funReverse (8546) << endl;
+    // cout << funPrime (8) << endl;
+    cout << funPrime (8) << endl;
     return 0;
 }
 
