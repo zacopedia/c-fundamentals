@@ -3066,9 +3066,7 @@ int funLarger3Nums (int num, int num1, int num2) {
     }  else{
         return num2;
     }
-
 }
-
 
 // =====================================================
 // PART 5 — Algorithm Return Patterns
@@ -3093,6 +3091,8 @@ int funReverse (int num) {
 
 // Create a function that takes a number.
 // Return true if the number is a prime number.
+
+
 
 // ///////////////////////////////////////////////
 
@@ -3698,10 +3698,10 @@ int funReverse (int num) {
 
 
 int main () {
-    showAge ();
-    showSum ();
-    showPrice ();
-    calculateArea ();
+    // showAge ();
+    // showSum ();
+    // showPrice ();
+    // calculateArea ();
     // circleArea ();
     // userInput ();
     // enterNumbers ();
@@ -3827,13 +3827,14 @@ int main () {
     // duplicateStrWord ();
     // combineSingleStr ();
     // repeatStr ();
-    // funSquare ();
-    // funCube ();
-    // funSum ();
-    // funProduct ();
-    // funLarger ();
-    // funLarger3Nums ();
-    funReverse ();
+    // cout << funSquare (4) << endl;
+    // cout << funCube (8) << endl;
+    // cout << funSum (6,5) << endl;
+    // cout << funProduct (9,8) << endl;
+    // cout << funLarger (6,9) << endl;
+    // cout << funLarger3Nums (8,4,9) << endl;
+    // cout << funReverse (8546) << endl;
+    cout << funReverse (8546) << endl;
     return 0;
 }
 
