@@ -3069,41 +3069,6 @@ int funLarger3Nums (int num, int num1, int num2) {
 
 }
 
-// =====================================================
-// PART 3 — Boolean Return Patterns
-// =====================================================
-
-// Create a function that takes a number.
-// Return true if the number is even.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a number.
-// Return true if the number is positive.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes a number.
-// Return true if the number is divisible by 5.
-
-
-// =====================================================
-// PART 4 — Mathematical Return Patterns
-// =====================================================
-
-// Create a function that takes a number.
-// Return its factorial.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes two numbers.
-// Return the average of the numbers.
-
-// ///////////////////////////////////////////////
-
-// Create a function that takes the radius of a circle.
-// Return the area of the circle.
-
 
 // =====================================================
 // PART 5 — Algorithm Return Patterns
@@ -3111,6 +3076,18 @@ int funLarger3Nums (int num, int num1, int num2) {
 
 // Create a function that takes a number.
 // Return the reverse of the number.
+
+int funReverse (int num) {
+    
+    int reversed = 0;
+    while (num != 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num /= 10;
+    }
+
+    return reversed;
+}
 
 // ///////////////////////////////////////////////
 
@@ -3854,7 +3831,9 @@ int main () {
     // funCube ();
     // funSum ();
     // funProduct ();
-    funLarger ();
+    // funLarger ();
+    // funLarger3Nums ();
+    funReverse ();
     return 0;
 }
 
