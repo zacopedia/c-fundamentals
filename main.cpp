@@ -3145,24 +3145,29 @@ int funSumDigit (int num) {
 
 // Create a vector with some numbers.
 // Print all elements using a loop.
+// Print only elements at even indices.
+
 void vectorElment () {
-    vector<int>nums = {12,23,55,01};
-    for (int num : nums) {
-        cout << num << endl;
+    vector<int>nums = {12,24,3,1};
+    for (int i = 0; i < nums.size(); i++) {
+        if (i % 2 == 0) {
+            cout << nums[i] << endl;
+        }
+        
     }
 }
 
 // ///////////////////////////////////////////////
 
 // Create a vector with 10 numbers.
-// Print only elements at even indices.
-
-
-// ///////////////////////////////////////////////
-
-// Create a vector with 10 numbers.
 // Print elements in reverse order.
 
+void vectorReverse () {
+    vector<int>nums = {1,2,3,4,5};
+    for (int i = nums.size() - 1; i >= 0; i--) {
+        cout << nums[i] << endl;
+    }
+}
 
 // =====================================================
 // PART 2 — Input + Dynamic Size Pattern
@@ -3862,7 +3867,8 @@ int main () {
     // cout << funReverse (8546) << endl;
     // cout << funPrime (8) << endl;
     // cout << funSumDigit (1234) << endl;
-    vectorElment ();
+    // vectorElment ();
+    vectorReverse ();
     return 0;
 }
 
