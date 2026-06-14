@@ -3178,13 +3178,45 @@ void vectorReverse () {
 // Stop when the user enters -1.
 // Print all elements.
 
+void vectorEmpty () {
+    vector<int>nums;
+    int number;
 
+    do {
+        cin >> number;
+        if (number != -1) {
+            nums.push_back(number);
+        }
+    } while (number != -1);
+
+    for (int i = 0; i < nums.size(); i++) {
+        cout << nums[i] << endl;
+    }
+}
 // ///////////////////////////////////////////////
 
 // Ask the user how many numbers he wants to enter.
 // Store them in a vector.
 // Print all elements.
 
+void vectorStore () {
+    vector<int>nums;
+    int count = 0;
+    int number;
+    cout << "How Many Numbers You Want To Store" << endl;
+    cin >> count;
+
+    for (int i = 0; i < count; i++) {
+        cout << "Enter Your Numbers" << endl;
+        cin >> number;
+        nums.push_back(number);
+    }
+    
+    cout << "===== Your Numbers =====" << endl;
+    for (int i = 0; i < nums.size(); i++) {
+        cout << nums[i] << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
@@ -3192,7 +3224,21 @@ void vectorReverse () {
 // Store them in a vector.
 // Print the size of the vector.
 
+void vectorSize () {
+    vector<int>nums;
+    int numbers;
 
+    cout << "===== Enter a Numbers =====" << endl;
+
+    while (numbers != 0) {
+        cin >> numbers;
+        nums.push_back(numbers);
+    }
+
+    
+        cout << "Num Size: " << nums.size() << endl;
+    
+}
 // =====================================================
 // PART 3 — Summation Pattern
 // =====================================================
@@ -3868,7 +3914,10 @@ int main () {
     // cout << funPrime (8) << endl;
     // cout << funSumDigit (1234) << endl;
     // vectorElment ();
-    vectorReverse ();
+    // vectorReverse ();
+    // vectorEmpty ();
+    // vectorStore ();
+    vectorSize ();
     return 0;
 }
 
