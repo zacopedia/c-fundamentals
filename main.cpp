@@ -3287,7 +3287,30 @@ void vectorSumEven () {
 // Ask the user for a number.
 // Check if the number exists in the vector.
 
+void vectorCheck () {
+    vector<int>nums = {1,2,3,4,5};
+    int number;
+    bool found = false;
 
+    cout << "Please Enter a Number" << endl;
+    cin >> number;
+
+    for (int i = 0; i < nums.size(); i++) {
+        if (number == nums[i]) {
+            found = true;
+            continue;
+        
+        } else {
+            found = false;
+        
+        }
+    }
+    if (found) {
+        cout << "The Number " << number << " Exist" << endl;
+    } else {
+        cout << "The Number " << number << " Not Exist" << endl;
+    }
+}
 // ///////////////////////////////////////////////
 
 // Create a vector.
@@ -3939,7 +3962,8 @@ int main () {
     // vectorStore ();
     // vectorSize ();
     // vectorSum ();
-    vectorSumEven ();
+    // vectorSumEven ();
+    vectorCheck ();
     return 0;
 }
 
