@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <limits>
+#include <vector>
 using namespace std;
 
 // =====================================================
@@ -3109,6 +3110,16 @@ bool funPrime (int num) {
 // Create a function that takes a number.
 // Return the sum of its digits.
 
+int funSumDigit (int num) {
+    int sum = 0;
+    while (num != 0) {
+        int digit = num % 10;
+        num /= 10;
+        sum += digit;
+    }
+
+    return sum;
+}
 
 // =====================================================
 // PART 6 — String Return Patterns
@@ -3134,7 +3145,12 @@ bool funPrime (int num) {
 
 // Create a vector with some numbers.
 // Print all elements using a loop.
-
+void vectorElment () {
+    vector<int>nums = {12,23,55,01};
+    for (int num : nums) {
+        cout << num << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
@@ -3845,7 +3861,8 @@ int main () {
     // cout << funLarger3Nums (8,4,9) << endl;
     // cout << funReverse (8546) << endl;
     // cout << funPrime (8) << endl;
-    cout << funPrime (8) << endl;
+    // cout << funSumDigit (1234) << endl;
+    vectorElment ();
     return 0;
 }
 
