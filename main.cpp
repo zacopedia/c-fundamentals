@@ -3245,19 +3245,39 @@ void vectorSize () {
 
 // Create a vector of numbers.
 // Calculate the sum of all elements.
-
-
-// ///////////////////////////////////////////////
-
-// Create a vector of numbers.
 // Calculate the average.
 
+void vectorSum () {
+    vector<int>nums = {1,2,3,4,5};
+    int sum = 0;
+    
+    for (int i = 0; i < nums.size(); i++) {
+        sum += nums[i];
+    }
+    
+    int average = sum / nums.size();
+
+    cout << sum << endl;
+    cout << average << endl;
+}
 
 // ///////////////////////////////////////////////
 
 // Create a vector.
 // Print the sum of even numbers only.
 
+void vectorSumEven () {
+    vector<int>nums = {1,2,3,4,5};
+    int sum = 0;
+    
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] % 2 == 0) {
+            sum += nums[i];
+        }
+    }
+    
+    cout << "The Sum Of Even Numbers Is :" << sum << endl;
+}
 
 // =====================================================
 // PART 4 — Searching Pattern
@@ -3917,7 +3937,9 @@ int main () {
     // vectorReverse ();
     // vectorEmpty ();
     // vectorStore ();
-    vectorSize ();
+    // vectorSize ();
+    // vectorSum ();
+    vectorSumEven ();
     return 0;
 }
 
