@@ -3298,12 +3298,10 @@ void vectorCheck () {
     for (int i = 0; i < nums.size(); i++) {
         if (number == nums[i]) {
             found = true;
-            continue;
+            break;
         
-        } else {
-            found = false;
+        } 
         
-        }
     }
     if (found) {
         cout << "The Number " << number << " Exist" << endl;
