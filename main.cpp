@@ -3301,7 +3301,7 @@ void vectorCheck () {
             break;
         
         } 
-        
+
     }
     if (found) {
         cout << "The Number " << number << " Exist" << endl;
@@ -3314,12 +3314,23 @@ void vectorCheck () {
 // Create a vector.
 // Count how many times a number appears.
 
+void vectorCount () {
+    vector<int>nums = {1,2,3,3,3,4,5};
+    int number;
+    int count = 0;
 
-// ///////////////////////////////////////////////
+    cout << "Please Enter a Number" << endl;
+    cin >> number;
 
-// Create a vector.
-// Find the index of a given number.
+    for (int i = 0; i < nums.size(); i++) {
+        if (number == nums[i]) {
+            count++;
+        } 
+    } 
 
+    cout << "The Number Appears " << count << " Times" << endl;
+
+}
 
 // =====================================================
 // PART 5 — Maximum / Minimum Pattern
@@ -3961,7 +3972,8 @@ int main () {
     // vectorSize ();
     // vectorSum ();
     // vectorSumEven ();
-    vectorCheck ();
+    // vectorCheck ();
+    vectorCount ();
     return 0;
 }
 
