@@ -3453,19 +3453,18 @@ void vectorStoringSquare () {
 
 // Create a vector.
 // Add an element at the end using push_back.
-
-
-// ///////////////////////////////////////////////
-
-// Create a vector.
-// Remove the last element using pop_back.
-
-
-// ///////////////////////////////////////////////
-
-// Create a vector.
 // Insert an element at the beginning.
 
+void vectorModification () {
+    vector<int>nums = {1,2,3,3,3,4,5};
+
+        nums.push_back(2);
+        nums.insert(nums.begin(), 12);
+    
+    for (int i = 0; i < nums.size(); i++) {
+        cout << nums[i] << endl;
+    } 
+}
 
 // =====================================================
 // PART 9 — Comparison Pattern
@@ -3474,13 +3473,41 @@ void vectorStoringSquare () {
 // Create a vector.
 // Find the second largest number.
 
+void vectorFindSecondLarge () {
+    vector<int>nums = {50,10,60, 100, 400};
+    int largest = nums.at(0);
+    int secondLargest = nums.at(0);
+
+    for (int i = 1; i < nums.size(); i++) {
+        if (nums[i] > largest) {
+            secondLargest = largest;
+            largest = nums[i];
+
+        } else if (nums[i] > secondLargest) {
+            secondLargest = nums[i];
+        }
+        
+    }
+        cout << secondLargest << endl;
+}
 
 // ///////////////////////////////////////////////
 
 // Create a vector.
 // Check if the vector is sorted in ascending order.
 
+void vectorCheckAscending () {
+    vector<int>nums = {50,10,60, 100, 400};
+    bool sorted = true;
 
+    for (int i = 0; i < nums.size() - 1; i++) {
+        if (nums[i] > nums[i + 1] ) {
+            sorted = false;
+        }
+    }
+
+    cout << "The Vector Is: " << sorted << endl;
+}
 // =====================================================
 // PART 10 — Two Vectors Pattern
 // =====================================================
@@ -4033,7 +4060,10 @@ int main () {
     // vectorCountEven ();
     // vectorMultiply ();
     // vectorNegeativeNums ();
-    vectorStoringSquare ();
+    // vectorStoringSquare ();
+    // vectorModification ();
+    // vectorFindSecondLarge ();
+    vectorCheckAscending ();
     return 0;
 }
 
