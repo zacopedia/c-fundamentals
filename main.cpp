@@ -3338,19 +3338,38 @@ void vectorCount () {
 
 // Create a vector.
 // Find the largest element.
+// Find the smallest element.
+// Find the difference between max and min.
 
+void vectorLargest () {
+    vector<int>nums = {1,2,3,3,3,4,5,100,1200,-1};
+    int largest = nums.at(0);
+    int smallest = nums.at(0);
+
+
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] > largest) {
+            largest = nums[i];
+        } else if (nums[i] < smallest) {
+            smallest = nums[i];
+        }
+    } 
+    int difference = largest - smallest;
+
+    cout << "The Largest Number Is: " << largest << endl;
+    cout << "The Smallest Number Is: " << smallest << endl;
+    cout << "The Difference Between Numbers Is: " << difference << endl;
+}
 
 // ///////////////////////////////////////////////
 
 // Create a vector.
 // Find the smallest element.
 
-
 // ///////////////////////////////////////////////
 
 // Create a vector.
 // Find the difference between max and min.
-
 
 // =====================================================
 // PART 6 — Counting Pattern
@@ -3973,7 +3992,8 @@ int main () {
     // vectorSum ();
     // vectorSumEven ();
     // vectorCheck ();
-    vectorCount ();
+    // vectorCount ();
+    vectorLargest ();
     return 0;
 }
 
