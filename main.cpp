@@ -3515,16 +3515,53 @@ void vectorCheckAscending () {
 // Create two vectors.
 // Add corresponding elements and store in a third vector.
 
+void vectorAdd () {
+    vector<int>numsA = {10,20,20};
+    vector<int>numsB = {40,50,60};
+    vector<int>numsC;
+
+    for (int i = 0; i < numsA.size(); i++) {
+        numsC.push_back(numsA[i] + numsB[i]);
+    }
+    
+    for (int i = 0; i < numsC.size(); i++) {
+        cout << numsC[i] << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Copy all elements from one vector to another.
 
+void vectorCopyElm () {
+    vector<int>numsA = {10,20,20};
+    vector<int>numsC;
+
+    for (int i = 0; i < numsA.size(); i++) {
+        numsC.push_back(numsA[i]);
+    }
+
+    for (int i = 0; i < numsC.size(); i++) {
+        cout << numsC[i] << endl;
+    }
+}
 
 // ///////////////////////////////////////////////
 
 // Reverse a vector into another vector.
 
+void vectorReverseData () {
+    vector<int>numsA = {10,20,30};
+    vector<int>numsC;
+
+    for (int i = numsA.size() - 1; i >= 0; i--) {
+        numsC.push_back(numsA[i]);
+    }
+
+    for (int i = 0; i < numsC.size(); i++) {
+        cout << numsC[i] << endl;
+    }
+}
 
 // =====================================================
 // PART 11 — Advanced Thinking (IMPORTANT)
@@ -4063,7 +4100,10 @@ int main () {
     // vectorStoringSquare ();
     // vectorModification ();
     // vectorFindSecondLarge ();
-    vectorCheckAscending ();
+    // vectorCheckAscending ();
+    // vectorAdd ();
+    // vectorCopyElm ();
+    vectorReverseData ();
     return 0;
 }
 
