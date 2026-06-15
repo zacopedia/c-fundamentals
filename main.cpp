@@ -3395,18 +3395,57 @@ void vectorCountEven () {
 // Create a vector.
 // Multiply each element by 2.
 
+void vectorMultiply () {
+    vector<int>nums = {1,2,3,3,3,4,5};
+    vector<int>numMultiply;
+
+    for (int i = 0; i < nums.size(); i++) {
+        numMultiply.push_back( nums[i] * 2);
+    } 
+
+    for (int i = 0; i < numMultiply.size(); i++) {
+        cout << numMultiply[i] << endl;
+    } 
+    
+}
 
 // ///////////////////////////////////////////////
 
 // Create a vector.
 // Replace negative numbers with 0.
 
+void vectorNegeativeNums () {
+    vector<int>nums = {1,-2,3,-20,3,-4,5};
+
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] < 0) {
+            nums[i] = 0;
+            // cout << nums[i] << endl;
+        }
+    }
+
+    for (int i = 0; i < nums.size(); i++) {
+        cout << nums[i] << endl;
+    }  
+}
 
 // ///////////////////////////////////////////////
 
 // Create a vector.
 // Create another vector storing squares of elements.
 
+void vectorStoringSquare () {
+    vector<int>nums = {1,2,3,3,3,4,5};
+    vector<int>numSquare;
+
+    for (int i = 0; i < nums.size(); i++) {
+        numSquare.push_back( nums[i] * nums[i]);
+    } 
+
+    for (int i = 0; i < numSquare.size(); i++) {
+        cout << numSquare[i] << endl;
+    } 
+}
 
 // =====================================================
 // PART 8 — Modification Pattern (VECTOR SPECIAL)
@@ -3991,7 +4030,10 @@ int main () {
     // vectorCheck ();
     // vectorCount ();
     // vectorLargest ();
-    vectorCountEven ();
+    // vectorCountEven ();
+    // vectorMultiply ();
+    // vectorNegeativeNums ();
+    vectorStoringSquare ();
     return 0;
 }
 
