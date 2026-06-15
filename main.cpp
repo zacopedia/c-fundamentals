@@ -3361,35 +3361,32 @@ void vectorLargest () {
     cout << "The Difference Between Numbers Is: " << difference << endl;
 }
 
-// ///////////////////////////////////////////////
-
-// Create a vector.
-// Find the smallest element.
-
-// ///////////////////////////////////////////////
-
-// Create a vector.
-// Find the difference between max and min.
-
 // =====================================================
 // PART 6 — Counting Pattern
 // =====================================================
 
 // Create a vector.
 // Count how many numbers are even.
-
-
-// ///////////////////////////////////////////////
-
-// Create a vector.
 // Count how many numbers are positive.
 
+void vectorCountEven () {
+    vector<int>nums = {1,2,3,3,3,4,5};
+    int countEven = 0;
+    int countPositive = 0;
 
-// ///////////////////////////////////////////////
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] % 2 == 0) {
+            countEven++;
+        } 
+        
+        if (nums[i] > 0) {
+            countPositive++;
+        }
+    } 
 
-// Create a vector.
-// Count how many numbers are greater than 100.
-
+    cout << "There Is " << countEven << " Numbers\n";
+    cout << "There Is " << countPositive << " Positive Numbers\n";
+}
 
 // =====================================================
 // PART 7 — Transformation Pattern
@@ -3993,7 +3990,8 @@ int main () {
     // vectorSumEven ();
     // vectorCheck ();
     // vectorCount ();
-    vectorLargest ();
+    // vectorLargest ();
+    vectorCountEven ();
     return 0;
 }
 
